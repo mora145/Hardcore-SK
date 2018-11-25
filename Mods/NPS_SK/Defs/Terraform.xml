@@ -11,8 +11,8 @@
     <modExtensions>
       <li Class="FertileFields.Terrain">
         <above>
-		  <li>TKKN_SaltField</li>
-		  <li>TKKN_Salted_Earth</li>
+		  <li>SaltField</li>
+		  <li>Salted_Earth</li>
         </above>
         <result>RockySoil</result>
         <products>
@@ -37,7 +37,7 @@
     <modExtensions>
       <li Class="FertileFields.Terrain">
         <above>
-          <li>TKKN_RiverDeposit</li>
+          <li>RiverDeposit</li>
         </above>
         <result>Marsh</result>
       </li>

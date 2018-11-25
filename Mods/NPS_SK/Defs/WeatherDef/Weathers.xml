@@ -9,7 +9,7 @@
 		<favorability>Neutral</favorability>
 		<perceivePriority>1</perceivePriority>
 		<ambientSounds>
-			<li>AmbientWind_Storm</li>
+			<li>Ambient_Wind_Storm</li>
 		</ambientSounds>
 		<windSpeedFactor>1e12</windSpeedFactor>
 		<!--This forces windy-->
@@ -53,7 +53,7 @@
 		<favorability>Neutral</favorability>
 		<perceivePriority>0</perceivePriority>
 		<ambientSounds>
-			<li>AmbientWind_Clear</li>
+			<li>Ambient_Wind_Clear</li>
 		</ambientSounds>
 		<skyColorsDay>
 			<sky>(0.8,0.8,0.8)</sky>
@@ -94,11 +94,11 @@
 		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Neutral</favorability>
 		<ambientSounds>
-			<li>AmbientWind_Fog</li>
+			<li>Ambient_Wind_Fog</li>
 		</ambientSounds>
 		<overlayClasses>
 			<li>WeatherOverlay_Fog</li>
-			<li>TKKN_NPS.WeatherOverlay_ThickFog</li>
+			<li>NPS.WeatherOverlay_ThickFog</li>
 		</overlayClasses>
 		<commonalityRainfallFactor>
 			<points>
@@ -134,17 +134,17 @@
 	</WeatherDef>
 
 	<WeatherDef>
-		<defName>TKKN_LavaSmoke</defName>
+		<defName>LavaSmoke</defName>
 		<label>lava smoke</label>
 		<description>lava smoke reduces the accuracy of ranged weapons and poisons pawns.</description>
 		<windSpeedFactor>0.5</windSpeedFactor>
 		<accuracyMultiplier>0.5</accuracyMultiplier>
 		<favorability>Bad</favorability>
 		<ambientSounds>
-			<li>AmbientWind_Fog</li>
+			<li>Ambient_Wind_Fog</li>
 		</ambientSounds>
 		<overlayClasses>
-			<li>TKKN_NPS.WeatherOverlay_LavaSmoke</li>
+			<li>NPS.WeatherOverlay_LavaSmoke</li>
 		</overlayClasses>
 		<commonalityRainfallFactor>
 			<points>
@@ -190,11 +190,11 @@
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<favorability>Bad</favorability>
 		<ambientSounds>
-			<li>AmbientWind_Storm</li>
+			<li>Ambient_Wind_Storm</li>
 		</ambientSounds>
 		<overlayClasses>
-			<li>TKKN_NPS.WeatherOverlay_DustStorm</li>
-			<li>TKKN_NPS.WeatherOverlay_DustStormHeavy</li>
+			<li>NPS.WeatherOverlay_DustStorm</li>
+			<li>NPS.WeatherOverlay_DustStormHeavy</li>
 		</overlayClasses>
 		<commonalityRainfallFactor>
 			<points>
@@ -240,10 +240,10 @@
 		<moveSpeedMultiplier>0.8</moveSpeedMultiplier>
 		<favorability>Bad</favorability>
 		<ambientSounds>
-			<li>AmbientWind_Storm</li>
+			<li>Ambient_Wind_Storm</li>
 		</ambientSounds>
 		<overlayClasses>
-			<li>TKKN_NPS.WeatherOverlay_DustStorm</li>
+			<li>NPS.WeatherOverlay_DustStorm</li>
 		</overlayClasses>
 		<commonalityRainfallFactor>
 			<points>

@@ -386,9 +386,9 @@
 
 	<!-- RefugeeChased -->
 	<SkilledWith>Skilled with</SkilledWith>
-	<RescuedInitial_AcceptSK>Accept HIM</RescuedInitial_AcceptSK>
-	<RescuedInitial_RejectSK>Reject HIS request</RescuedInitial_RejectSK>
-	<WandererInitialSK>NAME from {0} was wandering nearby and noticed you could use some help. HECAP would like to join your colony for a while.</WandererInitialSK>
+	<RescuedInitial_AcceptSK>Accept {PAWN_objective}</RescuedInitial_AcceptSK>
+	<RescuedInitial_RejectSK>Reject {PAWN_possessive} request</RescuedInitial_RejectSK>
+	<WandererInitialSK>{PAWN_nameDef} from {0} was wandering nearby and noticed you could use some help. {PAWN_pronoun} would like to join your colony for a while.</WandererInitialSK>
 
 	<!-- Found hidden resources -->
 	<MDLabel>Found Hidden Resources</MDLabel> 
@@ -902,7 +902,7 @@
 	<Supervizor>Supervizor: </Supervizor>
 	<Supervizor_sientist>Supervizor: (need a skilled scientist, min level 10 research)</Supervizor_sientist>
 	<Charge_progress>Charge progress: </Charge_progress>
-	<State>State: </State>
+	<MT_State>State: </MT_State>
 	<Connect_r_s>Connected rate/stored: </Connect_r_s>
 	<Powerneeded>Power needed: </Powerneeded>
 	<supervize_sientist>The skywrath controller is not supervized by a skilled scientist (level 10 research).</supervize_sientist>

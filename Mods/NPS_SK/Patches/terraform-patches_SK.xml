@@ -4,34 +4,34 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "Sand-RockyDirt"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
+				<xpath>Defs/ThingDef[defName = "Sand-RockyDirt"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
 				<value>
-					<li>TKKN_SandBeachWetSalt</li>
+					<li>SandBeachWetSalt</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "Sand-Gravel"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
+				<xpath>Defs/ThingDef[defName = "Sand-Gravel"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
 				<value>
-					<li>TKKN_SandBeachWetSalt</li>
+					<li>SandBeachWetSalt</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "Sand-SoilF"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
+				<xpath>Defs/ThingDef[defName = "Sand-SoilF"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
 				<value>
-					<li>TKKN_SandBeachWetSalt</li>
+					<li>SandBeachWetSalt</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "Sand-WaterShallow"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
+				<xpath>Defs/ThingDef[defName = "Sand-WaterShallow"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
 				<value>
-					<li>TKKN_SandBeachWetSalt</li>
+					<li>SandBeachWetSalt</li>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/ThingDef[defName = "Ice-WaterShallow"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
+				<xpath>Defs/ThingDef[defName = "Ice-WaterShallow"]/modExtensions/li[@Class="FertileFields.Terrain"]/above</xpath>
 				<value>
 					<li>IceShallow</li>
-					<li>TKKN_MuddyIce</li>
+					<li>MuddyIce</li>
 				</value>
 			</li>
 		</operations>

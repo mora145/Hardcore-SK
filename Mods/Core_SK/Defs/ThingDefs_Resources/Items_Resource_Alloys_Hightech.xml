@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>Tungsten</defName>
 		<label>tungsten alloy</label>
@@ -15,77 +15,24 @@
 		<stackLimit>75</stackLimit>
 		<statBases>
 			<MarketValue>50</MarketValue>
+			<StuffPower_Armor_Blunt>1.15</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.4</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>1.66</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.6</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
+			<Mass>0.35</Mass>
+			<Bulk>0.35</Bulk>
 		</statBases>
 		<thingCategories>
 			<li>RARBar</li>
 			<li>USLDHBar</li>
 		</thingCategories>
 	</ThingDef>
-	
-	<ThingDef ParentName="ResourceBase">
-		<defName>NichromeAlloy</defName>
-		<label>nichrome alloy</label>
-		<description>Nichrome is a magnetic alloy of Nickel, Chromium and Manganese. Nichrome Alloy is typically used as a more resistant electrical wiring instead of Copper or Aluminum Alloy.</description>
-		<graphicData>
-			<texPath>Things/Item/Ingot</texPath>
-			<graphicClass>Graphic_StackCount</graphicClass>
-			<color>(123,172,131)</color>
-		</graphicData>
-		<soundInteract>Metal_Drop</soundInteract>
-		<soundDrop>Metal_Drop</soundDrop>
-		<useHitPoints>true</useHitPoints>
-		<stackLimit>150</stackLimit>
-		<statBases>
-			<MarketValue>15</MarketValue>
-			<SharpDamageMultiplier>1.3</SharpDamageMultiplier>
-			<BluntDamageMultiplier>1.1</BluntDamageMultiplier>
-			<DeteriorationRate>0</DeteriorationRate>
-			<Flammability>0</Flammability>
-		</statBases>
-		<thingCategories>
-			<li>USLDBar</li>
-		</thingCategories>
-		<stuffProps>
-			<stuffAdjective>Nichrome</stuffAdjective>
-			<categories>
-				<li>Metallic</li>
-				<li>SolidMetallic</li>
-			</categories>
-			<constructEffect>ConstructMetal</constructEffect>
-			<commonality>0.05</commonality>
-			<color>(123,172,131)</color>
-			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
-			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
-			<statFactors>
-				<MaxHitPoints>2.7</MaxHitPoints>
-				<Beauty>1.1</Beauty>
-				<Flammability>0</Flammability>
-				<WorkToMake>1.8</WorkToMake>
-				<WorkToBuild>1.8</WorkToBuild>
-				<DoorOpenSpeed>0.9</DoorOpenSpeed>
-				<MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier>
-				<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-				<ArmorRating_Sharp>1.25</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.05</ArmorRating_Heat>
-				<ArmorRating_Electric>1.45</ArmorRating_Electric>
-				<Insulation_Cold>1.15</Insulation_Cold>
-				<Insulation_Heat>1.1</Insulation_Heat>
-				<MoveSpeed>0.8</MoveSpeed>
-				<MarketValue>0.7</MarketValue>
-				<BedRestEffectiveness>1.0</BedRestEffectiveness>
-				<ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
-				<WorkTableWorkSpeedFactor>1.25</WorkTableWorkSpeedFactor>
-				<MeleePenetrationFactor>1.28</MeleePenetrationFactor>
-				<Mass>1.22</Mass>
-			</statFactors>
-			<smeltable>true</smeltable>
-		</stuffProps>
-	</ThingDef>
-	
-	
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>StelliteAlloy</defName>
 		<label>stellite alloy</label>
@@ -101,10 +48,17 @@
 		<stackLimit>150</stackLimit>
 		<statBases>
 			<MarketValue>23</MarketValue>
+			<StuffPower_Armor_Blunt>1.5</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.44</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>1.25</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.35</SharpDamageMultiplier>
-			<BluntDamageMultiplier>1.25</BluntDamageMultiplier>
+			<BluntDamageMultiplier>1.38</BluntDamageMultiplier>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
+			<Mass>0.3</Mass>
+			<Bulk>0.3</Bulk>
 		</statBases>
 		<thingCategories>
 			<li>USLDBar</li>
@@ -118,7 +72,7 @@
 			<constructEffect>ConstructMetal</constructEffect>
 			<color>(125,146,178)</color>
 			<commonality>0.1</commonality>
-			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
 			<statFactors>
@@ -129,12 +83,6 @@
 				<WorkToBuild>2.0</WorkToBuild>
 				<DoorOpenSpeed>0.85</DoorOpenSpeed>
 				<MeleeWeapon_CooldownMultiplier>1.1</MeleeWeapon_CooldownMultiplier>
-				<ArmorRating_Blunt>1.4</ArmorRating_Blunt>
-				<ArmorRating_Sharp>1.35</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.15</ArmorRating_Heat>
-				<ArmorRating_Electric>1.2</ArmorRating_Electric>
-				<Insulation_Cold>1.15</Insulation_Cold>
-				<Insulation_Heat>1.15</Insulation_Heat>
 				<MoveSpeed>0.85</MoveSpeed>
 				<MarketValue>0.7</MarketValue>
 				<BedRestEffectiveness>1.1</BedRestEffectiveness>
@@ -146,8 +94,8 @@
 			<smeltable>true</smeltable>
 		</stuffProps>
 	</ThingDef>
-	
-	
+
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>TitaniumBar</defName>
 		<label>ferrotitanium alloy</label>
@@ -162,10 +110,17 @@
 		<stackLimit>150</stackLimit>
 		<statBases>
 			<MarketValue>26</MarketValue>
+			<StuffPower_Armor_Blunt>1.42</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.47</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>1.37</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.4</SharpDamageMultiplier>
-			<BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+			<BluntDamageMultiplier>1.45</BluntDamageMultiplier>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
+			<Mass>0.2</Mass>
+			<Bulk>0.2</Bulk>
 		</statBases>
 		<useHitPoints>true</useHitPoints>
 		<thingCategories>
@@ -180,7 +135,7 @@
 			<constructEffect>ConstructMetal</constructEffect>
 			<color>(160,178,181)</color>
 			<commonality>0.05</commonality>
-			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<statOffsets>
 				<Beauty>3</Beauty>
 			</statOffsets>
@@ -192,12 +147,6 @@
 				<WorkToBuild>2.2</WorkToBuild>
 				<DoorOpenSpeed>1.05</DoorOpenSpeed>
 				<MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
-				<ArmorRating_Blunt>1.4</ArmorRating_Blunt>
-				<ArmorRating_Sharp>1.45</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.35</ArmorRating_Heat>
-				<ArmorRating_Electric>1.15</ArmorRating_Electric>
-				<Insulation_Cold>1.25</Insulation_Cold>
-				<Insulation_Heat>1.2</Insulation_Heat>
 				<MoveSpeed>0.9</MoveSpeed>
 				<MarketValue>0.7</MarketValue>
 				<BedRestEffectiveness>1.15</BedRestEffectiveness>
@@ -209,8 +158,8 @@
 			<smeltable>true</smeltable>
 		</stuffProps>
 	</ThingDef>
-	
-	
+
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>NitinolAlloy</defName>
 		<label>nitinol alloy</label>
@@ -225,10 +174,17 @@
 		<stackLimit>150</stackLimit>
 		<statBases>
 			<MarketValue>27</MarketValue>
-			<SharpDamageMultiplier>1.3</SharpDamageMultiplier>
-			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+			<StuffPower_Armor_Blunt>1.46</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.43</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>1.4</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.35</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.25</BluntDamageMultiplier>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
+			<Mass>0.3</Mass>
+			<Bulk>0.3</Bulk>
 		</statBases>
 		<useHitPoints>true</useHitPoints>
 		<thingCategories>
@@ -243,7 +199,7 @@
 			<constructEffect>ConstructMetal</constructEffect>
 			<color>(175,175,175)</color>
 			<commonality>0.05</commonality>
-			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<statOffsets>
 				<Beauty>3</Beauty>
 			</statOffsets>
@@ -255,25 +211,19 @@
 				<WorkToBuild>2.4</WorkToBuild>
 				<DoorOpenSpeed>1.2</DoorOpenSpeed>
 				<MeleeWeapon_CooldownMultiplier>0.7</MeleeWeapon_CooldownMultiplier>
-				<ArmorRating_Blunt>1.45</ArmorRating_Blunt>
-				<ArmorRating_Sharp>1.35</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.4</ArmorRating_Heat>
-				<ArmorRating_Electric>1.3</ArmorRating_Electric>
-				<Insulation_Cold>1.25</Insulation_Cold>
-				<Insulation_Heat>1.2</Insulation_Heat>
 				<MoveSpeed>1.05</MoveSpeed>
 				<MarketValue>0.7</MarketValue>
 				<BedRestEffectiveness>1.35</BedRestEffectiveness>
 				<ImmunityGainSpeedFactor>1.25</ImmunityGainSpeedFactor>
 				<WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
 				<MeleePenetrationFactor>0.9</MeleePenetrationFactor>
-				<Mass>1.1</Mass>
+				<Mass>0.95</Mass>
 			</statFactors>
 			<smeltable>true</smeltable>
 		</stuffProps>
 	</ThingDef>
-	
-	
+
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>PobediteAlloy</defName>
 		<label>pobedite alloy</label>
@@ -289,10 +239,17 @@
 		<stackLimit>150</stackLimit>
 		<statBases>
 			<MarketValue>33</MarketValue>
-			<SharpDamageMultiplier>1.35</SharpDamageMultiplier>
-			<BluntDamageMultiplier>1.4</BluntDamageMultiplier>
+			<StuffPower_Armor_Blunt>1.62</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.56</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>1.64</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.4</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
+			<Mass>0.5</Mass>
+			<Bulk>0.5</Bulk>
 		</statBases>
 		<thingCategories>
 			<li>USLDBar</li>
@@ -307,7 +264,7 @@
 			<constructEffect>ConstructMetal</constructEffect>
 			<color>(85,85,85)</color>
 			<commonality>0.05</commonality>
-			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
 			<statFactors>
@@ -318,25 +275,19 @@
 				<WorkToBuild>2.6</WorkToBuild>
 				<DoorOpenSpeed>0.7</DoorOpenSpeed>
 				<MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
-				<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
-				<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.5</ArmorRating_Heat>
-				<ArmorRating_Electric>1.2</ArmorRating_Electric>
-				<Insulation_Cold>1.25</Insulation_Cold>
-				<Insulation_Heat>1.25</Insulation_Heat>
 				<MoveSpeed>0.8</MoveSpeed>
 				<MarketValue>0.7</MarketValue>
 				<BedRestEffectiveness>1.1</BedRestEffectiveness>
 				<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
 				<WorkTableWorkSpeedFactor>1.45</WorkTableWorkSpeedFactor>
 				<MeleePenetrationFactor>1.5</MeleePenetrationFactor>
-				<Mass>1.5</Mass>
+				<Mass>1.4</Mass>
 			</statFactors>
 			<smeltable>true</smeltable>
 		</stuffProps>
 	</ThingDef>
-	
-	
+
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>Titanium</defName>
 		<label>titanium alloy</label>
@@ -351,10 +302,17 @@
 		<useHitPoints>true</useHitPoints>
 		<statBases>
 			<MarketValue>45</MarketValue>
-			<SharpDamageMultiplier>1.45</SharpDamageMultiplier>
-			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+			<StuffPower_Armor_Blunt>0.95</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.5</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>1.4</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>-5</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>-5</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.48</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
+			<Mass>0.2</Mass>
+			<Bulk>0.2</Bulk>
 		</statBases>
 		<thingCategories>
 			<li>RARBar</li>
@@ -369,7 +327,7 @@
 			<color>(160,178,181)</color>
 			<commonality>0.2</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
-			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<statOffsets>
 				<Beauty>3</Beauty>
 			</statOffsets>
@@ -381,25 +339,19 @@
 				<WorkToBuild>3.0</WorkToBuild>
 				<DoorOpenSpeed>1.3</DoorOpenSpeed>
 				<MeleeWeapon_CooldownMultiplier>0.75</MeleeWeapon_CooldownMultiplier>
-				<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
-				<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.4</ArmorRating_Heat>
-				<ArmorRating_Electric>1.2</ArmorRating_Electric>
-				<Insulation_Cold>1.3</Insulation_Cold>
-				<Insulation_Heat>1.3</Insulation_Heat>
 				<MoveSpeed>1.1</MoveSpeed>
 				<MarketValue>0.7</MarketValue>
 				<BedRestEffectiveness>1.25</BedRestEffectiveness>
 				<ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
 				<WorkTableWorkSpeedFactor>1.6</WorkTableWorkSpeedFactor>
 				<MeleePenetrationFactor>1.55</MeleePenetrationFactor>
-				<Mass>0.95</Mass>
+				<Mass>0.8</Mass>
 			</statFactors>
 		</stuffProps>
 		<stackLimit>75</stackLimit>
 	</ThingDef>
-	
-	
+
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>AlphaPoly</defName>
 		<label>alpha poly</label>
@@ -410,14 +362,21 @@
 		</graphicData>
 		<soundInteract>Silver_Drop</soundInteract>
 		<soundDrop>Silver_Drop</soundDrop>
-		<tradeability>Never</tradeability>
+		<tradeability>None</tradeability>
 		<stackLimit>75</stackLimit>
 		<statBases>
 			<MarketValue>45</MarketValue>
+			<StuffPower_Armor_Blunt>0.7</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.6</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>1.6</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>30</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
 			<SharpDamageMultiplier>1.5</SharpDamageMultiplier>
 			<BluntDamageMultiplier>1.5</BluntDamageMultiplier>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
+			<Mass>0.15</Mass>
+			<Bulk>0.15</Bulk>
 		</statBases>
 		<thingCategories>
 			<li>USLDBar</li>
@@ -433,7 +392,7 @@
 			<color>(100,60,100)</color>
 			<commonality>0.05</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
-			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<stuffAdjective>Alpha Poly</stuffAdjective>
 			<statOffsets>
 				<Beauty>4</Beauty>
@@ -446,23 +405,17 @@
 				<WorkToBuild>3.0</WorkToBuild>
 				<DoorOpenSpeed>1.2</DoorOpenSpeed>
 				<MeleeWeapon_CooldownMultiplier>0.7</MeleeWeapon_CooldownMultiplier>
-				<ArmorRating_Blunt>0.7</ArmorRating_Blunt>
-				<ArmorRating_Sharp>1.6</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.6</ArmorRating_Heat>
-				<ArmorRating_Electric>1.4</ArmorRating_Electric>
-				<Insulation_Cold>1.35</Insulation_Cold>
-				<Insulation_Heat>1.3</Insulation_Heat>
 				<MoveSpeed>1.2</MoveSpeed>
 				<MarketValue>0.7</MarketValue>
 				<BedRestEffectiveness>1.4</BedRestEffectiveness>
 				<ImmunityGainSpeedFactor>1.3</ImmunityGainSpeedFactor>
 				<WorkTableWorkSpeedFactor>1.7</WorkTableWorkSpeedFactor>
 				<MeleePenetrationFactor>1.7</MeleePenetrationFactor>
-				<Mass>0.5</Mass>
+				<Mass>0.6</Mass>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>BetaPoly</defName>
 		<label>beta poly</label>
@@ -473,14 +426,21 @@
 		</graphicData>
 		<soundInteract>Silver_Drop</soundInteract>
 		<soundDrop>Silver_Drop</soundDrop>
-		<tradeability>Never</tradeability>
+		<tradeability>None</tradeability>
 		<stackLimit>75</stackLimit>
 		<statBases>
 			<MarketValue>65</MarketValue>
-			<SharpDamageMultiplier>1.55</SharpDamageMultiplier>
-			<BluntDamageMultiplier>1.55</BluntDamageMultiplier>
+			<StuffPower_Armor_Blunt>1.68</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.62</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>1.65</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>40</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>40</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.58</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.65</BluntDamageMultiplier>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Flammability>0</Flammability>
+			<Mass>0.15</Mass>
+			<Bulk>0.15</Bulk>
 		</statBases>
 		<thingCategories>
 			<li>USLDBar</li>
@@ -496,7 +456,7 @@
 			<color>(100,60,60)</color>
 			<commonality>0.05</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
-			<soundImpactStuff>BulletImpactMetal</soundImpactStuff>
+			<soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
 			<stuffAdjective>Beta Poly</stuffAdjective>
 			<statOffsets>
 				<Beauty>6</Beauty>
@@ -509,21 +469,15 @@
 				<WorkToBuild>4.5</WorkToBuild>
 				<DoorOpenSpeed>1.3</DoorOpenSpeed>
 				<MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier>
-				<ArmorRating_Blunt>1.65</ArmorRating_Blunt>
-				<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.65</ArmorRating_Heat>
-				<ArmorRating_Electric>1.55</ArmorRating_Electric>
-				<Insulation_Cold>1.4</Insulation_Cold>
-				<Insulation_Heat>1.35</Insulation_Heat>
 				<MoveSpeed>0.7</MoveSpeed>
 				<MarketValue>0.7</MarketValue>
 				<BedRestEffectiveness>1.4</BedRestEffectiveness>
 				<ImmunityGainSpeedFactor>1.3</ImmunityGainSpeedFactor>
 				<WorkTableWorkSpeedFactor>0.8</WorkTableWorkSpeedFactor>
 				<MeleePenetrationFactor>1.5</MeleePenetrationFactor>
-				<Mass>1.5</Mass>
+				<Mass>1.3</Mass>
 			</statFactors>
 		</stuffProps>
 	</ThingDef>
-	
+
 </Defs>

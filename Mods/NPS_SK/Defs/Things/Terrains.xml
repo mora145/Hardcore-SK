@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<TerrainDef>
-		<defName>TKKN_SaltField</defName>
+		<defName>SaltField</defName>
 		<label>salt field</label>
-		<texturePath>TKKN_NPS/Surfaces/saltField</texturePath>
+		<texturePath>NPS/Surfaces/saltField</texturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>375</renderPrecedence>
 		<pathCost>12</pathCost>
@@ -12,16 +12,16 @@
 			<Beauty>+1</Beauty>
 			<Cleanliness>-2</Cleanliness>
 		</statBases>
-		<terrainFilthDef>FilthDirt</terrainFilthDef>
+		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>0</fertility>
 		<takeFootprints>True</takeFootprints>
 		<acceptFilth>false</acceptFilth>
 		<avoidWander>true</avoidWander>
 	</TerrainDef>
 	<TerrainDef>
-		<defName>TKKN_Lava</defName>
+		<defName>Lava</defName>
 		<label>Lava</label>
-		<texturePath>TKKN_NPS/Surfaces/Lava</texturePath>
+		<texturePath>NPS/Surfaces/Lava</texturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<edgeType>Water</edgeType>
 		<renderPrecedence>398</renderPrecedence>
@@ -42,9 +42,9 @@
 		</tags>
 	</TerrainDef>
 	<TerrainDef>
-		<defName>TKKN_LavaDeep</defName>
+		<defName>LavaDeep</defName>
 		<label>Lava</label>
-		<texturePath>TKKN_NPS/Surfaces/Lava</texturePath>
+		<texturePath>NPS/Surfaces/Lava</texturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<edgeType>Water</edgeType>
 		<renderPrecedence>398</renderPrecedence>
@@ -65,9 +65,9 @@
 		</tags>
 	</TerrainDef>
 	<TerrainDef>
-		<defName>TKKN_ColdSpringsWater</defName>
+		<defName>ColdSpringsWater</defName>
 		<label>cold spring</label>
-		<texturePath>TKKN_NPS/Surfaces/springWater</texturePath>
+		<texturePath>NPS/Surfaces/springWater</texturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<edgeType>Water</edgeType>
 		<renderPrecedence>398</renderPrecedence>
@@ -89,9 +89,9 @@
 		</tags>
 	</TerrainDef>
 	<TerrainDef>
-		<defName>TKKN_HotSpringsWater</defName>
+		<defName>HotSpringsWater</defName>
 		<label>hot spring</label>
-		<texturePath>TKKN_NPS/Surfaces/springWater</texturePath>
+		<texturePath>NPS/Surfaces/springWater</texturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<edgeType>Water</edgeType>
 		<renderPrecedence>398</renderPrecedence>
@@ -114,9 +114,9 @@
 	</TerrainDef>
 
 	<TerrainDef>
-		<defName>BridgeTKKN_SpringsWater</defName>
+		<defName>BridgeSpringsWater</defName>
 		<label>spring water (under bridge)</label>
-		<texturePath>TKKN_NPS/Surfaces/springWater</texturePath>
+		<texturePath>NPS/Surfaces/springWater</texturePath>
 		<waterDepthShader>Map/WaterDepth</waterDepthShader>
 		<edgeType>Water</edgeType>
 		<renderPrecedence>398</renderPrecedence>
@@ -142,10 +142,10 @@
 	</TerrainDef>   
 
 	<TerrainDef ParentName="FloorBase">
-		<defName>TKKN_Salted_Earth</defName>
+		<defName>Salted_Earth</defName>
 		<label>salted earth</label>
 		<description>Dirt with salt mixed in. Nothing will grow here for a long time.</description>
-		<texturePath>TKKN_NPS/Surfaces/Saltedearth</texturePath>
+		<texturePath>NPS/Surfaces/Saltedearth</texturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>70</renderPrecedence>
 		<affordances>
@@ -163,9 +163,9 @@
 		<designationHotKey>Misc6</designationHotKey>
 	</TerrainDef>
 	<TerrainDef>
-		<defName>TKKN_SandBeachWetSalt</defName>
+		<defName>SandBeachWetSalt</defName>
 		<label>wet sand</label>
-		<texturePath>TKKN_NPS/Surfaces/wetSand</texturePath>
+		<texturePath>NPS/Surfaces/wetSand</texturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>375</renderPrecedence>
 		<pathCost>18</pathCost>
@@ -185,7 +185,7 @@
 			<li>WetRain</li>
 			<li>Sand</li>
 		</tags>
-		<terrainFilthDef>FilthSand</terrainFilthDef>
+		<generatedFilth>Filth_Sand</generatedFilth>
 		<fertility>0</fertility>
 		<takeFootprints>True</takeFootprints>
 		<acceptFilth>True</acceptFilth>
@@ -194,7 +194,7 @@
 	<TerrainDef>
 		<defName>IceShallow</defName>
 		<label>ice</label>
-		<texturePath>TKKN_NPS/Surfaces/wIce</texturePath>
+		<texturePath>NPS/Surfaces/wIce</texturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>350</renderPrecedence>
 		<pathCost>30</pathCost>
@@ -211,14 +211,14 @@
 		  <li>Diggable</li>
 		</affordances>
 		<scatterType>SoftDry</scatterType>
-		<terrainFilthDef />
+		<generatedFilth />
 		<fertility>0</fertility>
 		<takeFootprints>False</takeFootprints>
 	</TerrainDef>
 	<TerrainDef>
-		<defName>TKKN_MuddyIce</defName>
+		<defName>MuddyIce</defName>
 		<label>ice</label>
-		<texturePath>TKKN_NPS/Surfaces/mIce</texturePath>
+		<texturePath>NPS/Surfaces/mIce</texturePath>
 		<edgeType>FadeRough</edgeType>
 		<renderPrecedence>350</renderPrecedence>
 		<pathCost>35</pathCost>
@@ -235,12 +235,12 @@
 		  <li>Diggable</li>
 		</affordances>
 		<scatterType>SoftDry</scatterType>
-		<terrainFilthDef />
+		<generatedFilth />
 		<fertility>0</fertility>
 		<takeFootprints>False</takeFootprints>
 	</TerrainDef>
 	<TerrainDef>
-		<defName>TKKN_RiverDeposit</defName>
+		<defName>RiverDeposit</defName>
 		<label>river deposit</label>
 		<texturePath>Terrain/Surfaces/SoilRich</texturePath>
 		<edgeType>FadeRough</edgeType>
@@ -262,7 +262,7 @@
 			<li>GrowSoil</li>
 			<li>Diggable</li>
 		</affordances>
-		<terrainFilthDef>FilthDirt</terrainFilthDef>
+		<generatedFilth>Filth_Dirt</generatedFilth>
 		<fertility>1.4</fertility>
 		<takeFootprints>True</takeFootprints>
 		<acceptFilth>false</acceptFilth>
@@ -271,7 +271,7 @@
 	</TerrainDef>
 	<!-- FLOORS -->
 	<TerrainDef ParentName="TileStoneBase">
-		<defName>TKKN_TileBasalt</defName>
+		<defName>TileBasalt</defName>
 		<label>basalt tile</label>
 		<color>(50,50,50)</color>
 		<statBases>
@@ -279,19 +279,19 @@
 			<Beauty>2</Beauty>
 		</statBases>
 		<costList>
-			<TKKN_BlockLava>4</TKKN_BlockLava>
+			<BlockLava>4</BlockLava>
 		</costList>
 	</TerrainDef>
 	<TerrainDef ParentName="FlagstoneBase">
-		<defName>TKKN_FlagstoneBasalt</defName>
+		<defName>FlagstoneBasalt</defName>
 		<label>basalt flagstone</label>
 		<color>(50,50,50)</color>
 		<costList>
-			<TKKN_BlockLava>4</TKKN_BlockLava>
+			<BlockLava>4</BlockLava>
 		</costList>
 	</TerrainDef>
 	<TerrainDef ParentName="FloorBase">
-		<defName>TKKN_FloorRedWood</defName>
+		<defName>FloorRedWood</defName>
 		<label>red wood floor</label>
 		<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
 		<color>(102,41,20)</color>
@@ -307,7 +307,7 @@
 		<researchPrerequisites><li>FloorArtIII</li></researchPrerequisites>
 	</TerrainDef>
 	<TerrainDef ParentName="FloorBase">
-		<defName>TKKN_FloorAmber</defName>
+		<defName>FloorAmber</defName>
 		<label>amber floor</label>
 		<texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
 		<color>(224,147,4)</color>
@@ -316,7 +316,7 @@
 			<Beauty>3</Beauty>
 		</statBases>
 		<costList>
-			<TKKN_Amber>4</TKKN_Amber>
+			<Amber>4</Amber>
 		</costList>
 		<researchPrerequisites><li>FloorArtIV</li></researchPrerequisites>
 		<designationCategory>OutsideFloors</designationCategory>

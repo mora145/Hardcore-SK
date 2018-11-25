@@ -82,7 +82,7 @@
                         <li>Tail</li> 
 		</appliedOnFixedBodyParts>
 		<addsHediff>CyberneticTail</addsHediff>
-    <researchPrerequisite>SK_BionicsI</researchPrerequisite>
+    <researchPrerequisite>Bionics</researchPrerequisite>
 	</RecipeDef>
 
    <RecipeDef ParentName="SurgeryFlesh">
@@ -122,11 +122,10 @@
 			<Medicine>11</Medicine>
 		</skillRequirements>	
       <appliedOnFixedBodyParts>
-         <li>LeftHand</li>
-         <li>RightHand</li>
+         <li>Hand</li>
       </appliedOnFixedBodyParts>
       <addsHediff>PlasteelClaws</addsHediff>
-    <researchPrerequisite>SK_BionicsI</researchPrerequisite>
+    <researchPrerequisite>Bionics</researchPrerequisite>
    </RecipeDef>
 
   <RecipeDef ParentName="SurgeryFlesh">

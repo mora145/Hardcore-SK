@@ -36,7 +36,7 @@
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>Medicine</thingDef>
+          <thingDef>MedicineIndustrial</thingDef>
           <count>50</count>
         </li>
 
@@ -103,7 +103,7 @@
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
 		  <visible>false</visible>
-          <project>SK_ProductionI</project>
+          <project>Fabrication</project>
         </li>
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
@@ -113,17 +113,12 @@
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
 		  <visible>false</visible>
-          <project>Refining</project>
-        </li>
-        <li Class="ScenPart_StartingResearch">
-          <def>StartingResearch</def>
-		  <visible>false</visible>
           <project>SK_GlassworkingI</project>
         </li>
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
 		  <visible>false</visible>
-          <project>SK_MedicineI</project>
+          <project>Prosthetics</project>
         </li>
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
@@ -143,7 +138,7 @@
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
 		  <visible>false</visible>
-          <project>TailoringII</project>
+          <project>FlakArmor</project>
         </li>
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
@@ -198,7 +193,7 @@
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
 		  <visible>false</visible>
-          <project>SK_MetallurgyII</project>
+          <project>PlateArmor</project>
         </li>
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>

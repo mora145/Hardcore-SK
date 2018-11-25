@@ -4,13 +4,16 @@
 	<ThingDef Name="BuildingBase" Abstract="True">
 		<category>Building</category>
 		<thingClass>Building</thingClass>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<selectable>true</selectable>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<repairEffect>Repair</repairEffect>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<filthLeaving>BuildingRubble</filthLeaving>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<statBases>
+			<SellPriceFactor>0.70</SellPriceFactor>
+		</statBases>
 	</ThingDef>
 
 
@@ -34,9 +37,10 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>-2</Beauty>
 			<Mass>25</Mass>
-			<EntertainmentStrengthFactor>1</EntertainmentStrengthFactor>
+			<JoyGainFactor>1</JoyGainFactor>
 		</statBases>
 		<building>
+			<joyKind>Gaming_Shooting</joyKind>
 			<watchBuildingStandDistanceRange>
 				<min>5</min>
 				<max>8</max>
@@ -55,6 +59,9 @@
 		</costList>
 		<pathCost>10</pathCost>
 		<designationCategory>Joy</designationCategory>
-		<minifiedDef>MinifiedFurniture</minifiedDef>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsJoy</li>
+		</thingCategories>
 	</ThingDef>
 </Defs>

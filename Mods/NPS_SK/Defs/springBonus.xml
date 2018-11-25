@@ -2,13 +2,13 @@
 <Defs>
 
   <!-- ChemicalDef>
-    <defName>TKKN_hotspring_chill</defName>
+    <defName>hotspring_chill</defName>
     <label>relaxing in hot spring</label>
 	<onGeneratedAddictedToleranceChance>0</onGeneratedAddictedToleranceChance>
 </ChemicalDef -->
 
  <HediffDef>
-    <defName>TKKN_hotspring_chill_out</defName>
+    <defName>HotspringChillOut</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>relaxed from hot spring</label>
     <labelNoun>relaxing in a hot spring</labelNoun>
@@ -40,7 +40,7 @@
   </HediffDef>
   
    <HediffDef>
-    <defName>TKKN_coldspring_chill_out</defName>
+    <defName>ColdspringChillOut</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>relaxed from cold spring</label>
     <labelNoun>relaxing in a cold spring</labelNoun>

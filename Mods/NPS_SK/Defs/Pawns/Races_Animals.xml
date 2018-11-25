@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<Verse.ThingDef ParentName="BaseInsect">
-		<defName>TKKN_crab</defName>
+		<defName>GiantCrab</defName>
 		<label>giant crab</label>
 		<description>A huge, armored decapod crustacean, full of meat. Generally docile</description>
 		<statBases>
@@ -30,7 +30,8 @@
 				<power>4</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<commonality>0.2</commonality>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
 				<armorPenetration>0.05</armorPenetration>
 			</li>
 		</tools>
@@ -91,15 +92,15 @@
 		</modExtensions>
 	</Verse.ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>TKKN_crab</defName>
+		<defName>GiantCrab</defName>
 		<label>giant crab</label>
-		<race>TKKN_crab</race>
+		<race>GiantCrab</race>
 		<combatPower>30</combatPower>
-		<wildSpawn_EcoSystemWeight>0.20</wildSpawn_EcoSystemWeight>
+		<ecoSystemWeight>0.20</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>TKKN_NPS/Animals/Crab/Crab</texPath>
+					<texPath>NPS/Animals/Crab/Crab</texPath>
 					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -109,7 +110,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>TKKN_NPS/Animals/Crab/Crab</texPath>
+					<texPath>NPS/Animals/Crab/Crab</texPath>
 					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -119,7 +120,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>TKKN_NPS/Animals/Crab/Crab</texPath>
+					<texPath>NPS/Animals/Crab/Crab</texPath>
 					<drawSize>0.8</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -130,7 +131,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<Verse.ThingDef ParentName="AnimalThingBase">
-		<defName>TKKN_salamander</defName>
+		<defName>Salamanders</defName>
 		<label>fire salamander</label>
 		<description>Small, fast lizards that glow</description>
 		<statBases>
@@ -176,7 +177,8 @@
 				<power>1</power>
 				<cooldownTime>1.65</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<commonality>0.2</commonality>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
 				<armorPenetration>0.07</armorPenetration>
 			</li>
 		</tools>
@@ -186,9 +188,6 @@
 			<baseHealthScale>0.5</baseHealthScale>
 			<baseHungerRate>0.28</baseHungerRate>
 			<foodType>OmnivoreRoughAnimal</foodType>
-			<leatherColor>(101,116,58)</leatherColor>
-			<leatherLabel>salamander skin</leatherLabel>
-			<leatherInsulation>0.50</leatherInsulation>
 			<wildness>0.5</wildness>
 			<gestationPeriodDays>14</gestationPeriodDays>
 			<litterSizeCurve>
@@ -223,7 +222,7 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-			<li>StandardAnimal</li>
+			<li>AnimalCommon</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -232,16 +231,16 @@
 		</modExtensions>
 	</Verse.ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>TKKN_salamanders</defName>
+		<defName>Salamanders</defName>
 		<label>salamander</label>
-		<race>TKKN_salamander</race>
+		<race>Salamanders</race>
 		<combatPower>60</combatPower>
-		<wildSpawn_EcoSystemWeight>0.33</wildSpawn_EcoSystemWeight>
-		<wildSpawn_spawnWild>true</wildSpawn_spawnWild>
+		<ecoSystemWeight>0.33</ecoSystemWeight>
+		
 		<lifeStages>
 			<li>
 				<bodyGraphicData>
-					<texPath>TKKN_NPS/Animals/Salamander/Salamander</texPath>
+					<texPath>NPS/Animals/Salamander/Salamander</texPath>
 					<drawSize>0.4</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -251,7 +250,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>TKKN_NPS/Animals/Salamander/Salamander</texPath>
+					<texPath>NPS/Animals/Salamander/Salamander</texPath>
 					<drawSize>0.6</drawSize>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
@@ -261,7 +260,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>TKKN_NPS/Animals/Salamander/Salamander</texPath>
+					<texPath>NPS/Animals/Salamander/Salamander</texPath>
 					<drawSize>0.9</drawSize>
 					<shadowData>
 						<volume>(0.25, 0.3, 0.25)</volume>
@@ -276,7 +275,7 @@
 		</lifeStages>
 	</PawnKindDef>
 	<Verse.ThingDef ParentName="AnimalThingBase">
-		<defName>TKKN_giantsnail</defName>
+		<defName>GiantSnail</defName>
 		<label>giant snail</label>
 		<description>Slow moving, armoured herbivores. Salt is deadly to them.</description>
 		<statBases>
@@ -296,7 +295,6 @@
 				<power>1</power>
 				<cooldownTime>3</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<commonality>0.2</commonality>
 				<armorPenetration>0.01</armorPenetration>
 			</li>
 		</tools>
@@ -315,7 +313,7 @@
 			<baseBodySize>0.5</baseBodySize>
 			<baseHealthScale>0.4</baseHealthScale>
 			<foodType>VegetarianRoughAnimal</foodType>
-			<trainableIntelligence>None</trainableIntelligence>
+			<trainability>None</trainability>
 			<wildness>0.95</wildness>
 			<gestationPeriodDays>7</gestationPeriodDays>
 			<mateMtbHours>8</mateMtbHours>
@@ -350,7 +348,7 @@
 			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
 		</race>
 		<tradeTags>
-			<li>StandardAnimal</li>
+			<li>AnimalCommon</li>
 		</tradeTags>
 		<modExtensions>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
@@ -359,16 +357,16 @@
 		</modExtensions>
 	</Verse.ThingDef>
 	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>TKKN_giantsnail</defName>
+		<defName>GiantSnail</defName>
 		<label>Giant Snail</label>
-		<race>TKKN_giantsnail</race>
+		<race>GiantSnail</race>
 		<combatPower>30</combatPower>
-		<wildSpawn_EcoSystemWeight>0.20</wildSpawn_EcoSystemWeight>
+		<ecoSystemWeight>0.20</ecoSystemWeight>
 		<lifeStages>
 			<li>
 				<label>Giant Snail</label>
 				<bodyGraphicData>
-					<texPath>TKKN_NPS/Animals/Snail/Snail</texPath>
+					<texPath>NPS/Animals/Snail/Snail</texPath>
 					<drawSize>0.45</drawSize>
 					<color>(223,219,108)</color>
 				</bodyGraphicData>
@@ -379,7 +377,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>TKKN_NPS/Animals/Snail/Snail</texPath>
+					<texPath>NPS/Animals/Snail/Snail</texPath>
 					<drawSize>.8</drawSize>
 					<color>(200,150,85)</color>
 				</bodyGraphicData>
@@ -390,7 +388,7 @@
 			</li>
 			<li>
 				<bodyGraphicData>
-					<texPath>TKKN_NPS/Animals/Snail/Snail</texPath>
+					<texPath>NPS/Animals/Snail/Snail</texPath>
 					<drawSize>1</drawSize>
 					<color>(200,150,85)</color>
 					<shadowData>

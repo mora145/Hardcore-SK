@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<TKKN_NPS.ElementSpawnDef>
-		<defName>TKKN_SpawnSaltCrystals</defName>
-		<thingDef>TKKN_SaltCrystal</thingDef>
+	<NPS.ElementSpawnDef>
+		<defName>SpawnSaltCrystals</defName>
+		<thingDef>SaltCrystal</thingDef>
 		<allowOnWater>false</allowOnWater>
 		<terrainValidationDisallowed>
 		</terrainValidationDisallowed>
 		<terrainValidationAllowed>
-			<li>TKKN_SaltField</li>
+			<li>SaltField</li>
 		</terrainValidationAllowed>
 		<forbiddenBiomes>
-			<li>TKKN_Oasis</li>
+			<li>Oasis</li>
 			<li>NPS_BiomeWorker_Sequioa</li>
-			<li>TKKN_RedwoodForest</li>
+			<li>RedwoodForest</li>
 			<li>Desert</li>
 			<li>Ocean</li>
 			<li>IceSheet</li>
@@ -39,11 +39,11 @@
 			<li>TundraArchipelago_Fresh</li>
 		</forbiddenBiomes>
 		<allowedBiomes/>
-	</TKKN_NPS.ElementSpawnDef>
+	</NPS.ElementSpawnDef>
 
-	<TKKN_NPS.ElementSpawnDef>
-		<defName>TKKN_SpawnHotSprings</defName>
-		<thingDef>TKKN_HotSpring</thingDef>
+	<NPS.ElementSpawnDef>
+		<defName>SpawnHotSprings</defName>
+		<thingDef>HotSpring</thingDef>
 		<allowOnWater>false</allowOnWater>
 		<terrainValidationDisallowed>
 		    <li>Road</li>
@@ -56,18 +56,18 @@
 			<li>Marsh</li>
 			<li>MarshyTerrain</li>
 			<li>WaterDeep</li>
-			<li>WaterMovingDeep</li>
+			<li>WaterMovingChestDeep</li>
 			<li>Ice</li>
 			<li>IceShallow</li>
-			<li>TKKN_SandBeachWetSalt</li>
-			<li>TKKN_MuddyIce</li>
-			<li>TKKN_RiverDeposit</li>
+			<li>SandBeachWetSalt</li>
+			<li>MuddyIce</li>
+			<li>RiverDeposit</li>
 		</terrainValidationDisallowed>
 		<terrainValidationAllowed>
 		</terrainValidationAllowed>
 		<forbiddenBiomes>
-			<li>TKKN_Desert</li>
-			<li>TKKN_Oasis</li>
+			<li>DesertSaltFields</li>
+			<li>Oasis</li>
 			<li>Desert</li>
 			<li>Ocean</li>
 			<li>IceSheet</li>
@@ -89,12 +89,12 @@
 			<li>TundraArchipelago_Fresh</li>
 		</forbiddenBiomes>
 		<allowedBiomes/>
-	</TKKN_NPS.ElementSpawnDef>
+	</NPS.ElementSpawnDef>
 
 
-	<TKKN_NPS.ElementSpawnDef>
-		<defName>TKKN_SpawnColdSprings</defName>
-		<thingDef>TKKN_ColdSpring</thingDef>
+	<NPS.ElementSpawnDef>
+		<defName>SpawnColdSprings</defName>
+		<thingDef>ColdSpring</thingDef>
 		<allowOnWater>false</allowOnWater>
 		<terrainValidationDisallowed>
 		    <li>Road</li>
@@ -107,19 +107,19 @@
 			<li>Marsh</li>
 			<li>MarshyTerrain</li>
 			<li>WaterDeep</li>
-			<li>WaterMovingDeep</li>
+			<li>WaterMovingChestDeep</li>
 			<li>Ice</li>
 			<li>IceShallow</li>
-			<li>TKKN_SandBeachWetSalt</li>
-			<li>TKKN_MuddyIce</li>
-			<li>TKKN_RiverDeposit</li>
+			<li>SandBeachWetSalt</li>
+			<li>MuddyIce</li>
+			<li>RiverDeposit</li>
 		</terrainValidationDisallowed>
 		<terrainValidationAllowed>
 		</terrainValidationAllowed>
 		<forbiddenBiomes>
-			<li>TKKN_Desert</li>
-			<li>TKKN_VolcanicFlow</li>
-			<li>TKKN_Oasis</li>
+			<li>DesertSaltFields</li>
+			<li>VolcanicFlow</li>
+			<li>Oasis</li>
 			<li>Desert</li>
 			<li>Ocean</li>
 			<li>IceSheet</li>
@@ -142,5 +142,5 @@
 			<li>TundraArchipelago_Fresh</li>
 		</forbiddenBiomes>
 		<allowedBiomes/>
-	</TKKN_NPS.ElementSpawnDef>
+	</NPS.ElementSpawnDef>
 </Defs>

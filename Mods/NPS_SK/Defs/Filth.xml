@@ -2,10 +2,10 @@
 <Defs>
 
   <ThingDef ParentName="BaseFilth">
-    <defName>TKKN_FilthPuddle</defName>
+    <defName>FilthPuddle</defName>
     <label>Puddle</label>
     <graphicData>
-      <texPath>TKKN_NPS/Temperature/Puddles</texPath>
+      <texPath>NPS/Temperature/Puddles</texPath>
       <shaderType>Transparent</shaderType>
     </graphicData>
     <filth>
@@ -16,10 +16,10 @@
   </ThingDef>
   
     <ThingDef ParentName="BaseFilth">
-    <defName>TKKN_FilthShells</defName>
+    <defName>FilthShells</defName>
     <label>Shells</label>
     <graphicData>
-      <texPath>TKKN_NPS/Filth/Shells</texPath>
+      <texPath>NPS/Filth/Shells</texPath>
     </graphicData>
     <filth>
       <cleaningWorkToReduceThickness>10</cleaningWorkToReduceThickness>
@@ -29,10 +29,10 @@
   </ThingDef>
   
     <ThingDef ParentName="BaseFilth">
-    <defName>TKKN_FilthSeaweed</defName>
+    <defName>FilthSeaweed</defName>
     <label>seaweed</label>
     <graphicData>
-      <texPath>TKKN_NPS/Filth/Seaweed</texPath>
+      <texPath>NPS/Filth/Seaweed</texPath>
     </graphicData>
     <filth>
       <cleaningWorkToReduceThickness>10</cleaningWorkToReduceThickness>
@@ -42,10 +42,10 @@
   </ThingDef>
   
     <ThingDef ParentName="BaseFilth">
-    <defName>TKKN_FilthDriftwood</defName>
+    <defName>FilthDriftwood</defName>
     <label>driftwood</label>
     <graphicData>
-      <texPath>TKKN_NPS/Filth/Driftwood</texPath>
+      <texPath>NPS/Filth/Driftwood</texPath>
     </graphicData>
     <filth>
       <cleaningWorkToReduceThickness>10</cleaningWorkToReduceThickness>

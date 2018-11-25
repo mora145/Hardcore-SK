@@ -4,12 +4,12 @@
 	<!-- ============================== Big threats ==============================-->
 	
   <IncidentDef>
-    <defName>TKKN_LavaEruption</defName>
+    <defName>LavaEruption</defName>
     <label>Lava Eruption!</label>
-    <targetTypes>
-        <li>MapPlayerHome</li>
-    </targetTypes>
-    <workerClass>TKKN_NPS.IncidentWorker_LavaFlow</workerClass>
+    <targetTags>
+        <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>NPS.IncidentWorker_LavaFlow</workerClass>
     <baseChance>2</baseChance>
     <category>ThreatBig</category>
     <pointsScaleable>true</pointsScaleable>

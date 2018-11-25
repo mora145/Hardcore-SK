@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>*/BiomeDef[defName = "BorealArchipelago" or "BorealArchipelago_Fresh"]</xpath>
+    <xpath>Defs/BiomeDef[defName = "BorealArchipelago" or "BorealArchipelago_Fresh"]</xpath>
     <value>
       <li Class="SeasonalWeather.SeasonalWeatherExtension">
         <spring>
@@ -64,7 +64,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>*/BiomeDef[defName = "ColdBogArchipelago" or "ColdBogArchipelago_Fresh"]</xpath>
+    <xpath>Defs/BiomeDef[defName = "ColdBogArchipelago" or "ColdBogArchipelago_Fresh"]</xpath>
     <value>
       <li Class="SeasonalWeather.SeasonalWeatherExtension">
         <spring>
@@ -122,7 +122,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>*/BiomeDef[defName = "DesertArchipelago" or "DesertArchipelago_Fresh"]</xpath>
+    <xpath>Defs/BiomeDef[defName = "DesertArchipelago" or "DesertArchipelago_Fresh"]</xpath>
     <value>
       <li Class="SeasonalWeather.SeasonalWeatherExtension">
         <spring>
@@ -186,7 +186,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>*/BiomeDef[defName = "TemperateArchipelago" or "TemperateArchipelago_Fresh"]</xpath>
+    <xpath>Defs/BiomeDef[defName = "TemperateArchipelago" or "TemperateArchipelago_Fresh"]</xpath>
     <value>
       <li Class="SeasonalWeather.SeasonalWeatherExtension">
         <spring>
@@ -249,7 +249,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>*/BiomeDef[defName = "TemperateSwampArchipelago" or "TemperateSwampArchipelago_Fresh"]</xpath>
+    <xpath>Defs/BiomeDef[defName = "TemperateSwampArchipelago" or "TemperateSwampArchipelago_Fresh"]</xpath>
     <value>
       <li Class="SeasonalWeather.SeasonalWeatherExtension">
         <spring>
@@ -312,7 +312,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>*/BiomeDef[defName = "TropicalArchipelago" or "TropicalArchipelago_Fresh"]</xpath>
+    <xpath>Defs/BiomeDef[defName = "TropicalArchipelago" or "TropicalArchipelago_Fresh"]</xpath>
     <value>
       <li Class="SeasonalWeather.SeasonalWeatherExtension">
         <spring>
@@ -375,7 +375,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>*/BiomeDef[defName = "TropicalSwampArchipelago" or "TropicalSwampArchipelago_Fresh"]</xpath>
+    <xpath>Defs/BiomeDef[defName = "TropicalSwampArchipelago" or "TropicalSwampArchipelago_Fresh"]</xpath>
     <value>
       <li Class="SeasonalWeather.SeasonalWeatherExtension">
         <spring>
@@ -438,7 +438,7 @@
     </value>
   </Operation>
   <Operation Class="PatchOperationAddModExtension">
-    <xpath>*/BiomeDef[defName = "TundraArchipelago" or "TundraArchipelago_Fresh"]</xpath>
+    <xpath>Defs/BiomeDef[defName = "TundraArchipelago" or "TundraArchipelago_Fresh"]</xpath>
     <value>
       <li Class="SeasonalWeather.SeasonalWeatherExtension">
         <spring>

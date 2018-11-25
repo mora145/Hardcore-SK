@@ -2,18 +2,19 @@
 <Defs>
 
 	<BiomeDef>
-		<defName>TKKN_Desert</defName>
+		<defName>DesertSaltFields</defName>
 		<label>desert and salt fields</label>
 		<description>A very dry area which supports little life. Salt fields are here. Deserts can be hot, or quite cold.</description>
-		<workerClass>TKKN_NPS.NPS_BiomeWorker_Desert</workerClass>
-		<animalDensity>0.25</animalDensity>
-		<plantDensity>0.05</plantDensity>
-		<factionBaseSelectionWeight>0.65</factionBaseSelectionWeight>
-		<pathCost_spring>0</pathCost_spring>
-		<pathCost_summer>0</pathCost_summer>
-		<pathCost_fall>0</pathCost_fall>
-		<pathCost_winter>0</pathCost_winter>
-		<texture>TKKN_NPS/World/Biomes/Saltfields</texture>
+		<workerClass>NPS.NPS_BiomeWorker_Desert</workerClass>
+		<animalDensity>0.45</animalDensity>
+		<plantDensity>0.25</plantDensity>
+		<settlementSelectionWeight>0.65</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<forageability>0.25</forageability>
+		<foragedFood>RawAgave</foragedFood>
+		<texture>NPS/World/Biomes/Saltfields</texture>
+		<wildPlantsCareAboutLocalFertility>false</wildPlantsCareAboutLocalFertility>
+		<wildPlantRegrowDays>35</wildPlantRegrowDays>
 		<diseaseMtbDays>80</diseaseMtbDays>
 		<diseases>
 			<li>
@@ -26,10 +27,6 @@
 			</li>
 			<li>
 				<diseaseInc>Disease_earache</diseaseInc>
-				<commonality>100</commonality>
-			</li>
-			<li>
-				<diseaseInc>Disease_Flu</diseaseInc>
 				<commonality>100</commonality>
 			</li>
 			<li>
@@ -72,10 +69,18 @@
 				<diseaseInc>Disease_MuscleParasites</diseaseInc>
 				<commonality>60</commonality>
 			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
 		</diseases>
 		<terrainsByFertility>
 			<li>
-				<terrain>TKKN_SaltField</terrain>
+				<terrain>SaltField</terrain>
 				<min>-999</min>
 				<max>0.3</max>
 			</li>
@@ -99,18 +104,18 @@
 			<SnowHard>3</SnowHard>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<PlantGrass>6</PlantGrass>
-			<PlantSaguaroCactus>1</PlantSaguaroCactus>
-			<PlantPincushionCactus>1</PlantPincushionCactus>
-			<PlantDandelion>0.5</PlantDandelion>
-			<PlantTreeDrago>0.45</PlantTreeDrago>
-			<PlantTreeCecropia>0.15</PlantTreeCecropia>
-			<PlantAgave>0.25</PlantAgave>
-			<PlantBush>0.25</PlantBush>
-			<PlantPsychoid>0.01</PlantPsychoid>
-			<PlantCrocus>0.2</PlantCrocus>
-			<PlantBananaTree>0.02</PlantBananaTree>
-			<PlantTreePalm>0.25</PlantTreePalm>
+			<Plant_Grass>6</Plant_Grass>
+			<Plant_SaguaroCactus>1</Plant_SaguaroCactus>
+			<Plant_PincushionCactus>1</Plant_PincushionCactus>
+			<Plant_Dandelion>0.5</Plant_Dandelion>
+			<Plant_TreeDrago>0.45</Plant_TreeDrago>
+			<Plant_TreeCecropia>0.15</Plant_TreeCecropia>
+			<Plant_Agave>0.25</Plant_Agave>
+			<Plant_Bush>0.25</Plant_Bush>
+			<Plant_Psychoid>0.01</Plant_Psychoid>
+			<Plant_Crocus>0.2</Plant_Crocus>
+			<Plant_TreeBanana>0.02</Plant_TreeBanana>
+			<Plant_TreePalm>0.25</Plant_TreePalm>
 		</wildPlants>
 		<wildAnimals>
 			<Gazelle>0.1</Gazelle>
@@ -123,11 +128,10 @@
 			<SpottedHyena>0.08</SpottedHyena>
 			<Rat>0.30</Rat>
 			<Cougar>0.02</Cougar>
-			<FoxFennec>0.02</FoxFennec>
+			<Fox_Fennec>0.02</Fox_Fennec>
 			<Fly>0.1</Fly>
 			<Mosquito>0.2</Mosquito>
 			<Scorpion>0.1</Scorpion>
-			<MiniSpider>0.06</MiniSpider>
 			<Cockroach>0.05</Cockroach>
 			<Meerkat>0.45</Meerkat>
 		</wildAnimals>
@@ -139,18 +143,18 @@
 
 
 	<BiomeDef>
-		<defName>TKKN_Oasis</defName>
+		<defName>Oasis</defName>
 		<label>desert oasis</label>
 		<description>A large amount of water surrounded by a very dry area. The oasis itself has rich soil and lots of animals, but is surrounded by extreme desert.</description>
-		<workerClass>TKKN_NPS.NPS_BiomeWorker_Oasis</workerClass>
-		<animalDensity>0.35</animalDensity>
-		<plantDensity>0.05</plantDensity>
-		<factionBaseSelectionWeight>0.65</factionBaseSelectionWeight>
-		<pathCost_spring>0</pathCost_spring>
-		<pathCost_summer>0</pathCost_summer>
-		<pathCost_fall>0</pathCost_fall>
-		<pathCost_winter>0</pathCost_winter>
-		<texture>TKKN_NPS/World/Biomes/Oasis</texture>
+		<workerClass>NPS.NPS_BiomeWorker_Oasis</workerClass>
+		<animalDensity>0.6</animalDensity>
+		<plantDensity>0.3</plantDensity>
+		<settlementSelectionWeight>0.7</settlementSelectionWeight>
+		<forageability>0.25</forageability>
+		<foragedFood>RawAgave</foragedFood>
+		<wildPlantsCareAboutLocalFertility>false</wildPlantsCareAboutLocalFertility>
+		<wildPlantRegrowDays>35</wildPlantRegrowDays>
+		<texture>NPS/World/Biomes/Oasis</texture>
 		<diseaseMtbDays>80</diseaseMtbDays>
 		<diseases>
 			<li>
@@ -205,6 +209,14 @@
 				<diseaseInc>Disease_MuscleParasites</diseaseInc>
 				<commonality>60</commonality>
 			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
 		</diseases>
 		<terrainsByFertility>
 			<li>
@@ -224,14 +236,14 @@
 			<SnowHard>3</SnowHard>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<PlantGrass>8</PlantGrass>
-			<PlantSaguaroCactus>.5</PlantSaguaroCactus>
-			<PlantPincushionCactus>.5</PlantPincushionCactus>
-			<PlantDandelion>0.8</PlantDandelion>
-			<PlantTreePalm>0.8</PlantTreePalm>
-			<PlantAgave>0.3</PlantAgave>
-			<PlantBush>0.25</PlantBush>
-			<PlantTreeDrago>0.25</PlantTreeDrago>
+			<Plant_Grass>8</Plant_Grass>
+			<Plant_SaguaroCactus>.5</Plant_SaguaroCactus>
+			<Plant_PincushionCactus>.5</Plant_PincushionCactus>
+			<Plant_Dandelion>0.8</Plant_Dandelion>
+			<Plant_TreePalm>0.8</Plant_TreePalm>
+			<Plant_Agave>0.3</Plant_Agave>
+			<Plant_Bush>0.25</Plant_Bush>
+			<Plant_TreeDrago>0.25</Plant_TreeDrago>
 		</wildPlants>
 		<wildAnimals>
 			<Gazelle>1</Gazelle>
@@ -244,9 +256,8 @@
 			<Rat>0.30</Rat>
 			<Cougar>0.18</Cougar>
 			<Rhinoceros>0.02</Rhinoceros>
-			<FoxFennec>0.02</FoxFennec>
+			<Fox_Fennec>0.02</Fox_Fennec>
 			<Scorpion>0.05</Scorpion>
-			<MiniSpider>0.05</MiniSpider>
 			<Cockroach>0.03</Cockroach>
 			<SpottedHyena>0.17</SpottedHyena>
 		</wildAnimals>
@@ -257,20 +268,20 @@
 	</BiomeDef>
 
 	<BiomeDef>
-		<defName>TKKN_RedwoodForest</defName>
+		<defName>RedwoodForest</defName>
 		<label>redwood forest</label>
 		<description>Forests of large, slow growing redwood trees and old growth oaks. Very rainy and Cloudy. Many species of animals move around in the trees and on the plains. Because of snow, it is slow to travel in winter.</description>
-		<workerClass>TKKN_NPS.NPS_BiomeWorker_Redwoods</workerClass>
-		<animalDensity>2.8</animalDensity>
-		<plantDensity>0.48</plantDensity>
-		<factionBaseSelectionWeight>1</factionBaseSelectionWeight>
-		<pathCost_spring>1750</pathCost_spring>
-		<pathCost_summer>1750</pathCost_summer>
-		<pathCost_fall>1750</pathCost_fall>
-		<pathCost_winter>44000</pathCost_winter>
-		<texture>TKKN_NPS/World/Biomes/Redwoods</texture>
+		<workerClass>NPS.NPS_BiomeWorker_Redwoods</workerClass>
+		<animalDensity>2.6</animalDensity>
+		<plantDensity>0.65</plantDensity>
+		<settlementSelectionWeight>0.95</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<forageability>0.75</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<wildPlantRegrowDays>25</wildPlantRegrowDays>
+		<texture>NPS/World/Biomes/Redwoods</texture>
 		<soundsAmbient>
-			<li>AmbientNightInsects_Standard</li>
+			<li>Ambient_NightInsects_Standard</li>
 		</soundsAmbient>
 		<diseaseMtbDays>45</diseaseMtbDays>
 		<diseases>
@@ -330,6 +341,14 @@
 				<diseaseInc>Disease_MuscleParasites</diseaseInc>
 				<commonality>50</commonality>
 			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
 		</diseases>
 		<terrainsByFertility>
 			<li>
@@ -387,28 +406,27 @@
 			<ThickFog>3</ThickFog>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<PlantTallGrass>3.5</PlantTallGrass>
-			<PlantSwordFern>1.6</PlantSwordFern>
-			<PlantFern>3.4</PlantFern>
-			<PlantBush>0.6</PlantBush>
-			<PlantTreePine>0.5</PlantTreePine>
-			<TKKN_PlantTreeHazelnut>0.5</TKKN_PlantTreeHazelnut>
-			<TKKN_OldGrowth_PlantTreeHazelnut>0.07</TKKN_OldGrowth_PlantTreeHazelnut>            
+			<Plant_TallGrass>3.5</Plant_TallGrass>
+			<Plant_SwordFern>1.6</Plant_SwordFern>
+			<Plant_Fern>3.4</Plant_Fern>
+			<Plant_Bush>0.6</Plant_Bush>
+			<Plant_TreePine>0.5</Plant_TreePine>
+			<PlantTreeHazelnut>0.5</PlantTreeHazelnut>
+			<OldGrowth_PlantTreeHazelnut>0.07</OldGrowth_PlantTreeHazelnut>            
 			<PlantTreeRedwood>0.3</PlantTreeRedwood>
-			<PlantRaspberry>0.1</PlantRaspberry>
-			<PlantStrawberry>0.05</PlantStrawberry>
-			<Plantblueberry>0.05</Plantblueberry>
-			<PlantAppletree>0.05</PlantAppletree>
-			<Rhododendron>0.12</Rhododendron>
-			<PlantHealroot>0.05</PlantHealroot>
-			<PlantBlueMushroom>0.12</PlantBlueMushroom>
-			<PlantRedMushroom>0.1</PlantRedMushroom>
-			<Plantmushroom>0.1</Plantmushroom>
-			<PlantVenus>0.2</PlantVenus>
-			<PlantBrambles>0.7</PlantBrambles>
-			<PlantAnthurium>0.01</PlantAnthurium>
-			<PlantWhiteRose>0.11</PlantWhiteRose>
-			<PlantAstragalus>0.1</PlantAstragalus>
+			<Plant_Berry>0.1</Plant_Berry>
+			<Plant_Strawberry>0.05</Plant_Strawberry>
+			<Plant_TreeApple>0.05</Plant_TreeApple>
+			<Plant_Rhododendron>0.12</Plant_Rhododendron>
+			<Plant_Healroot>0.05</Plant_Healroot>
+			<Plant_Mushroom_Blue>0.12</Plant_Mushroom_Blue>
+			<Plant_Mushroom_Red>0.1</Plant_Mushroom_Red>
+			<Plant_Mushroom>0.1</Plant_Mushroom>
+			<Plant_Venus>0.2</Plant_Venus>
+			<Plant_Brambles>0.7</Plant_Brambles>
+			<Plant_Anthurium>0.01</Plant_Anthurium>
+			<Plant_WhiteRose>0.11</Plant_WhiteRose>
+			<Plant_Astragalus>0.1</Plant_Astragalus>
 		</wildPlants>
 		<wildAnimals>
 			<Hare>1.00</Hare>
@@ -424,14 +442,13 @@
 			<Muffalo>0.2</Muffalo>
 			<Boomalope>0.2</Boomalope>
 			<Elk>0.3</Elk>
-			<TKKN_giantsnail>0.04</TKKN_giantsnail>
-			<WolfTimber>0.04</WolfTimber>
-			<FoxRed>0.04</FoxRed>
+			<GiantSnail>0.04</GiantSnail>
+			<Wolf_Timber>0.04</Wolf_Timber>
+			<Fox_Red>0.04</Fox_Red>
 			<Megasloth>0.04</Megasloth>
-			<GrizzlyBear>0.022</GrizzlyBear>
+			<Bear_Grizzly>0.022</Bear_Grizzly>
 			<Warg>0.012</Warg>
 			<Cougar>0.012</Cougar>
-			<MiniSpider>0.08</MiniSpider>
 			<Cockroach>0.1</Cockroach>
 			<Tiger>0.06</Tiger>
 			<Fly>1.1</Fly>
@@ -439,36 +456,32 @@
 			<Buffalo>0.2</Buffalo>
 			<Lynx>0.01</Lynx>
 			<Rimwolf>0.04</Rimwolf>
-			<Blackbear>0.08</Blackbear>
 			<Horse>0.08</Horse>
 			<Fishercat>0.15</Fishercat>
-			<Jackalope>0.2</Jackalope>
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>
 			<li>Alpaca</li>
 			<li>Buffalo</li>
 			<li>Horse</li>
-			<li>Blackbear</li>
-			<li>GrizzlyBear</li>
+			<li>Bear_Grizzly</li>
 		</allowedPackAnimals>
 	</BiomeDef>
 
 	<BiomeDef>
-		<defName>TKKN_VolcanicFlow</defName>
+		<defName>VolcanicFlow</defName>
 		<label>volcanic fields</label>
 		<description>Fresh lava means there is a lot of danger - and a lot of rich soil and geothermal vents. Constant molten lava means winter is mild.</description>
-		<workerClass>TKKN_NPS.NPS_BiomeWorker_LavaFields</workerClass>
-		<animalDensity>0.25</animalDensity>
-		<plantDensity>0.15</plantDensity>
-		<factionBaseSelectionWeight>.6</factionBaseSelectionWeight>
-		<pathCost_spring>1650</pathCost_spring>
-		<pathCost_summer>1650</pathCost_summer>
-		<pathCost_fall>1650</pathCost_fall>
-		<pathCost_winter>27500</pathCost_winter>
-		<texture>TKKN_NPS/World/Biomes/Lavatropical</texture>
+		<workerClass>NPS.NPS_BiomeWorker_LavaFields</workerClass>
+		<animalDensity>0.7</animalDensity>
+		<plantDensity>0.4</plantDensity>
+		<settlementSelectionWeight>0.5</settlementSelectionWeight>
+		<forageability>0.3</forageability>
+		<foragedFood>RawAgave</foragedFood>
+		<wildPlantRegrowDays>35</wildPlantRegrowDays>
+		<texture>NPS/World/Biomes/Lavatropical</texture>
 		<soundsAmbient>
-			<li>AmbientNightInsects_Standard</li>
+			<li>Ambient_NightInsects_Standard</li>
 		</soundsAmbient>
 		<diseaseMtbDays>35</diseaseMtbDays>
 		<diseases>
@@ -528,10 +541,18 @@
 				<diseaseInc>Disease_MuscleParasites</diseaseInc>
 				<commonality>50</commonality>
 			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>80</commonality>
+			</li>
 		</diseases>
 		<terrainsByFertility>
 			<li>
-				<terrain>TKKN_LavaRock_RoughHewn</terrain>
+				<terrain>LavaRock_RoughHewn</terrain>
 				<min>-999</min>
 				<max>.5</max>
 			</li>	  
@@ -551,12 +572,12 @@
 				<perlinFrequency>0.04</perlinFrequency>
 				<thresholds>
 					<li>
-						<terrain>TKKN_LavaRock_RoughHewn</terrain>
+						<terrain>LavaRock_RoughHewn</terrain>
 						<min>0.3</min>
 						<max>.6</max>
 					</li>
 					<li>
-						<terrain>TKKN_Lava</terrain>
+						<terrain>Lava</terrain>
 						<min>.6</min>
 						<max>999</max>
 					</li>
@@ -565,24 +586,24 @@
 		</terrainPatchMakers>
 		<baseWeatherCommonalities>
 			<Clear>2</Clear>
-			<TKKN_LavaSmoke>20</TKKN_LavaSmoke>
+			<LavaSmoke>20</LavaSmoke>
 			<Rain>1</Rain>
 			<DryThunderstorm>1</DryThunderstorm>
 			<RainyThunderstorm>1</RainyThunderstorm>
 			<FoggyRain>1</FoggyRain>
 		</baseWeatherCommonalities>
 		<wildPlants>
-			<PlantTallGrass>2.0</PlantTallGrass>
-			<PlantGrass>3.0</PlantGrass>
-			<PlantFern>0.5</PlantFern>
-			<PlantShrubLow>2.0</PlantShrubLow>
-			<PlantDandelion>0.8</PlantDandelion>
-			<PlantAlocasia>0.8</PlantAlocasia>
-			<PlantTreePalm>0.5</PlantTreePalm>
-			<PlantTreeTeak>0.5</PlantTreeTeak>
-			<PlantTreeBamboo>0.3</PlantTreeBamboo>
-			<PlantClivia>0.07</PlantClivia>
-			<PlantRafflesia>0.0008</PlantRafflesia>		 
+			<Plant_TallGrass>2.0</Plant_TallGrass>
+			<Plant_Grass>3.0</Plant_Grass>
+			<Plant_Fern>0.5</Plant_Fern>
+			<Plant_ShrubLow>2.0</Plant_ShrubLow>
+			<Plant_Dandelion>0.8</Plant_Dandelion>
+			<Plant_Alocasia>0.8</Plant_Alocasia>
+			<Plant_TreePalm>0.5</Plant_TreePalm>
+			<Plant_TreeTeak>0.5</Plant_TreeTeak>
+			<Plant_TreeBamboo>0.3</Plant_TreeBamboo>
+			<Plant_Clivia>0.07</Plant_Clivia>
+			<Plant_Rafflesia>0.0008</Plant_Rafflesia>		 
 		</wildPlants>
 		<wildAnimals>
 			<Rat>0.8</Rat>
@@ -593,14 +614,13 @@
 			<Muffalo>0.2</Muffalo>
 			<Boomalope>0.2</Boomalope>
 			<Alpaca>0.1</Alpaca>
-			<WolfTimber>0.04</WolfTimber>
-			<FoxRed>0.04</FoxRed>
-			<GrizzlyBear>0.022</GrizzlyBear>
+			<Wolf_Timber>0.04</Wolf_Timber>
+			<Fox_Red>0.04</Fox_Red>
+			<Bear_Grizzly>0.022</Bear_Grizzly>
 			<Warg>0.012</Warg>
 			<Cougar>0.012</Cougar>
-			<TKKN_salamanders>0.2</TKKN_salamanders>
+			<Salamanders>0.2</Salamanders>
 			<Lynx>0.008</Lynx>
-			<MiniSpider>0.05</MiniSpider>
 			<Cockroach>0.03</Cockroach>
 		</wildAnimals>
 		<allowedPackAnimals>
@@ -614,17 +634,17 @@
 		<defName>Savanna</defName>
 		<label>savanna</label>
 		<description>A savanna is a rolling grassland scattered with shrubs and isolated trees, which can be found between a tropical rainforest and desert biome. Not enough rain falls on a savanna to support forests.</description>
-		<workerClass>TKKN_NPS.BiomeWorker_Savanna</workerClass>
+		<workerClass>NPS.BiomeWorker_Savanna</workerClass>
 		<animalDensity>2.3</animalDensity>
 		<plantDensity>0.85</plantDensity>
-		<factionBaseSelectionWeight>0.95</factionBaseSelectionWeight>
-		<pathCost_spring>0</pathCost_spring>
-		<pathCost_summer>0</pathCost_summer>
-		<pathCost_fall>0</pathCost_fall>
-		<pathCost_winter>0</pathCost_winter>
-		<texture>TKKN_NPS/World/Biomes/Savanna</texture>
+		<settlementSelectionWeight>0.8</settlementSelectionWeight>
+		<movementDifficulty>1.15</movementDifficulty>
+		<forageability>1</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<wildPlantRegrowDays>15</wildPlantRegrowDays>
+		<texture>NPS/World/Biomes/Savanna</texture>
 		<soundsAmbient>
-			<li>AmbientNightInsects_Standard</li>
+			<li>Ambient_NightInsects_Standard</li>
 		</soundsAmbient>
 		<diseaseMtbDays>70</diseaseMtbDays>
 		<diseases>
@@ -679,6 +699,14 @@
 			<li>
 				<diseaseInc>Disease_MuscleParasites</diseaseInc>
 				<commonality>60</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>80</commonality>
 			</li>
 		</diseases>
 		<terrainsByFertility>
@@ -739,17 +767,16 @@
 		</baseWeatherCommonalities>
 		<wildPlants>
 			<PlantSavannaGrass>7.0</PlantSavannaGrass>
-			<PlantDandelion>0.8</PlantDandelion>
-			<Plantoats>0.15</Plantoats>
-			<PlantTreeCecropia>0.4</PlantTreeCecropia>
-			<PlantRaspberry>0.1</PlantRaspberry>
-			<PlantTreeDrago>0.05</PlantTreeDrago>
-			<PlantHypericum>0.06</PlantHypericum>
-			<PlantCotton>0.1</PlantCotton>
-			<PlantSmokeleaf>0.04</PlantSmokeleaf>
-			<PlantWildRose>0.07</PlantWildRose>
-			<PlantFlax>0.07</PlantFlax>
-			<PlantDevilstrand>0.05</PlantDevilstrand>
+			<Plant_Dandelion>0.8</Plant_Dandelion>
+			<Plant_TreeCecropia>0.4</Plant_TreeCecropia>
+			<Plant_Berry>0.1</Plant_Berry>
+			<Plant_TreeDrago>0.05</Plant_TreeDrago>
+			<Plant_Hypericum>0.06</Plant_Hypericum>
+			<Plant_Cotton>0.1</Plant_Cotton>
+			<Plant_Smokeleaf>0.04</Plant_Smokeleaf>
+			<Plant_WildRose>0.07</Plant_WildRose>
+			<Plant_Flax>0.07</Plant_Flax>
+			<Plant_Devilstrand>0.05</Plant_Devilstrand>
 		</wildPlants>
 		<wildAnimals>
 			<SpottedHyena>0.32</SpottedHyena>
@@ -768,8 +795,8 @@
 			<Rat>1.0</Rat>
 			<Megasloth>0.03</Megasloth>
 			<Cougar>0.11</Cougar>
-			<WolfTimber>0.02</WolfTimber>
-			<FoxFennec>0.05</FoxFennec>
+			<Wolf_Timber>0.02</Wolf_Timber>
+			<Fox_Fennec>0.05</Fox_Fennec>
 			<Nightling>0.06</Nightling>
 			<Buffalo>0.15</Buffalo>
 			<Crashbug>1.0</Crashbug>
@@ -778,7 +805,6 @@
 			<Scorpion>0.06</Scorpion>
 			<Tiger>0.07</Tiger>
 			<SmilodonPop>0.03</SmilodonPop>
-			<MiniSpider>0.08</MiniSpider>
 		</wildAnimals>
 		<allowedPackAnimals>
 			<li>Muffalo</li>

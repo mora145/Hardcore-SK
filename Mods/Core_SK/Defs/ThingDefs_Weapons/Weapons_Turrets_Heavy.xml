@@ -9,7 +9,7 @@
       <texPath>Things/Projectile/Pilum</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>BowLarge</soundInteract>
+    <soundInteract>Bow_Large</soundInteract>
 	<statBases>
 		<MarketValue>500</MarketValue>
 		<SightsEfficiency>1.1</SightsEfficiency>
@@ -28,14 +28,14 @@
         <minRange>10</minRange>
 		<range>60</range>
 		<burstShotCount>1</burstShotCount>
-        <soundCast>BowLarge</soundCast>
+        <soundCast>Bow_Large</soundCast>
 		<muzzleFlashScale>12</muzzleFlashScale>
 	   </li>
 	</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>3.00</reloadTime>
+				<reloadTime>2.50</reloadTime>
 				<spawnUnloaded>true</spawnUnloaded>
 				<ammoSet>AmmoSet_Balista</ammoSet>
 			</li>
@@ -63,11 +63,11 @@
         <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
         <hasStandardCommand>true</hasStandardCommand>
 		<defaultProjectile>Stone_Ball</defaultProjectile>
-		<warmupTime>2.20</warmupTime>
+		<warmupTime>2.60</warmupTime>
         <minRange>20</minRange>
 		<range>90</range>
+		<!--<forcedMissRadius>4</forcedMissRadius>-->
 		<burstShotCount>1</burstShotCount>
-		<forcedMissRadius>4</forcedMissRadius>
         <soundCast>Mortar_LaunchA</soundCast>
 		<muzzleFlashScale>14</muzzleFlashScale>
         <targetParams>
@@ -79,7 +79,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>1.100</reloadTime>
+				<reloadTime>7.5</reloadTime>
 				<spawnUnloaded>true</spawnUnloaded>
 				<ammoSet>AmmoSet_Catapult</ammoSet>
 			</li>
@@ -124,7 +124,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>15</magazineSize>
-				<reloadTime>3.20</reloadTime>
+				<reloadTime>5.8</reloadTime>
 				<spawnUnloaded>true</spawnUnloaded>
 				<ammoSet>AmmoSet_30x29mmGrenade</ammoSet>
 			</li>
@@ -169,7 +169,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>25</magazineSize>
-				<reloadTime>6.50</reloadTime>
+				<reloadTime>6.5</reloadTime>
 				<spawnUnloaded>true</spawnUnloaded>
 				<ammoSet>AmmoSet_30x29mmGrenade</ammoSet>
 			</li>
@@ -187,7 +187,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <description>90mm Flak cannon on a stationary emplacement.</description>
-    <soundInteract>ArtilleryShellLoaded</soundInteract>
+    <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
 		<MarketValue>2000</MarketValue>
 		<SightsEfficiency>1.8</SightsEfficiency>
@@ -217,7 +217,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>7.00</reloadTime>
+				<reloadTime>7.5</reloadTime>
 				<spawnUnloaded>true</spawnUnloaded>
 				<ammoSet>AmmoSet_90mmCannonShell</ammoSet>
 			</li>
@@ -236,7 +236,7 @@
 		<texPath>Things/Building/Security/CannonGun_Top</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-		<soundInteract>ArtilleryShellLoaded</soundInteract>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
 			<MarketValue>4000</MarketValue>
 			<SightsEfficiency>1.8</SightsEfficiency>
@@ -269,7 +269,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>8.50</reloadTime>
+				<reloadTime>8.5</reloadTime>
 				<spawnUnloaded>true</spawnUnloaded>
 				<ammoSet>AmmoSet_120mmCannonShell</ammoSet>
 			</li>
@@ -288,7 +288,7 @@
 		<texPath>Things/Building/Security/HowitzerGun_Top</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>ArtilleryShellLoaded</soundInteract>
+    <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
 		<MarketValue>3800</MarketValue>
 		<SightsEfficiency>2.5</SightsEfficiency>
@@ -321,7 +321,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>1.100</reloadTime>
+				<reloadTime>8.8</reloadTime>
 				<spawnUnloaded>true</spawnUnloaded>
 				<ammoSet>AmmoSet_155mmHowitzerShell</ammoSet>
 			</li>

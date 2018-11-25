@@ -14,12 +14,8 @@
 				<yourMod>Seasonal Weather</yourMod>
 				<errorOnFail>true</errorOnFail>
 			</li>
-			<li Class="ModCheck.FindFile">
-				<modName>Nature's Pretty Sweet</modName>
-				<file>Biomes.xml</file>
-			</li>
 			<li Class="PatchOperationAddModExtension">
-				<xpath>*/BiomeDef[defName = "TKKN_Desert"]</xpath>
+				<xpath>Defs/BiomeDef[defName = "TKKN_Desert"]</xpath>
 				<value>
 					<li Class="SeasonalWeather.SeasonalWeatherExtension">
 						<spring>
@@ -90,7 +86,7 @@
 			</li>
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>*/BiomeDef[defName = "TKKN_Oasis"]</xpath>
+				<xpath>Defs/BiomeDef[defName = "TKKN_Oasis"]</xpath>
 				<value>
 					<li Class="SeasonalWeather.SeasonalWeatherExtension">
 						<spring>
@@ -161,7 +157,7 @@
 			</li>
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>*/BiomeDef[defName = "TKKN_RedwoodForest"]</xpath>
+				<xpath>Defs/BiomeDef[defName = "TKKN_RedwoodForest"]</xpath>
 				<value>
 					<li Class="SeasonalWeather.SeasonalWeatherExtension">
 						<spring>
@@ -235,7 +231,7 @@
 			</li>
 
 			<li Class="PatchOperationAddModExtension">
-				<xpath>*/BiomeDef[defName = "TKKN_VolcanicFlow"]</xpath>
+				<xpath>Defs/BiomeDef[defName = "TKKN_VolcanicFlow"]</xpath>
 				<value>
 					<li Class="SeasonalWeather.SeasonalWeatherExtension">
 						<spring>
@@ -310,7 +306,7 @@
 			</li>
 			
 			<li Class="PatchOperationAddModExtension">
-				<xpath>*/BiomeDef[defName = "Savanna"]</xpath>
+				<xpath>Defs/BiomeDef[defName = "Savanna"]</xpath>
 				<value>
 					<li Class="SeasonalWeather.SeasonalWeatherExtension">
 						<spring>

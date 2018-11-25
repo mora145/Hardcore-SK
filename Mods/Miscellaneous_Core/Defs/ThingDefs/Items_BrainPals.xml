@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef Name="BodyPartBase" Abstract="True">
+	<ThingDef Name="BodyPartBase_MiscCore" Abstract="True">
 		<label>implant</label>
 		<thingClass>ThingWithComps</thingClass>
 		<category>Item</category>
@@ -16,9 +16,10 @@
 		<altitudeLayer>Item</altitudeLayer>
 		<tickerType>Never</tickerType>
 		<alwaysHaulable>true</alwaysHaulable>
-		<isBodyPartOrImplant>true</isBodyPartOrImplant>
+		<isTechHediff>true</isTechHediff>
+		<techLevel>Spacer</techLevel>
 		<tradeTags>
-			<li>BodyPartOrImplant</li>
+			<li>TechHediff</li>
 		</tradeTags>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
@@ -27,16 +28,19 @@
 			<li>BodyPartsArtificial</li>
 		</thingCategories>
 		<pathCost>10</pathCost>
+		<thingSetMakerTags>
+			<li>RewardSpecial</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<!-- artificial - bionics -->
 
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartBase_MiscCore">
 		<defName>BionicTacticalImplant</defName>
 		<label>bionic brainPal</label>
 		<description>Advanced bionic computer flawlessly integrated into the human brain.</description>
 		<graphicData>
-			<texPath>Things/Item/Implant/Implant</texPath>
+			<texPath>Things/Item/Health/HealthItemBionic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -46,17 +50,14 @@
 		<techHediffsTags>
 			<li>Advanced</li>
 		</techHediffsTags>
-		<itemGeneratorTags>
-			<li>SpecialReward</li>
-		</itemGeneratorTags>
 	</ThingDef>
 
-	<ThingDef ParentName="BodyPartBase">
+	<ThingDef ParentName="BodyPartBase_MiscCore">
 		<defName>ElectronicTacticalImplant</defName>
 		<label>electronic brainPal</label>
 		<description>Advanced computer with a direct brain interface.</description>
 		<graphicData>
-			<texPath>Things/Item/Implant/Implant</texPath>
+			<texPath>Things/Item/Health/HealthItemBionic</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -66,9 +67,6 @@
 		<techHediffsTags>
 			<li>Advanced</li>
 		</techHediffsTags>
-		<itemGeneratorTags>
-			<li>SpecialReward</li>
-		</itemGeneratorTags>
 	</ThingDef>
 
 </Defs>
