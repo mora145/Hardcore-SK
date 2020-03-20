@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Mental breaks: extreme -->
+
+  <Possessed.label>endemoniado</Possessed.label>
+  <Possessed.beginLetter>¡{0} está poseido!</Possessed.beginLetter>
+  <Possessed.beginLetterLabel>poseido</Possessed.beginLetterLabel>
+  <Possessed.recoveryMessage>{0} ya no está poseido.</Possessed.recoveryMessage>
+  <Possessed.baseInspectLine>Estado mental: Posesión</Possessed.baseInspectLine>
+
+
+</LanguageData>
