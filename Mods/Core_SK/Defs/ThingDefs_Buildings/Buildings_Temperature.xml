@@ -33,7 +33,7 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
-			<WorkToBuild>200</WorkToBuild>
+			<WorkToBuild>180</WorkToBuild>
 			<Flammability>0</Flammability>
 			<WorkTableWorkSpeedFactor>0.7</WorkTableWorkSpeedFactor>
 		</statBases>
@@ -72,7 +72,8 @@
 				<fuelCapacity>10</fuelCapacity>
 				<smokesize>0.3</smokesize>
 				<canAutoBurn>true</canAutoBurn>
-				<effectOnWeather>true</effectOnWeather>				
+				<effectOnWeather>true</effectOnWeather>
+				<smokeDensity>2</smokeDensity>
 				<fuelFilter>
 					<thingDefs>
 						<li>Charcoal</li>
@@ -120,11 +121,11 @@
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
-		<fillPercent>1</fillPercent>
+		<fillPercent>0.6</fillPercent>
 		<castEdgeShadows>true</castEdgeShadows>
 		<statBases>
 			<MaxHitPoints>310</MaxHitPoints>
-			<WorkToBuild>2500</WorkToBuild>
+			<WorkToBuild>1260</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
 		<tickerType>Normal</tickerType>
@@ -133,7 +134,7 @@
 		<stuffCategories>
 			<li>Stony</li>
 			<li>Bricks</li>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>120</costStuffCount>
 		<comps>
@@ -155,6 +156,8 @@
 				<smokesize>0.5</smokesize>
 				<fuelCapacity>30</fuelCapacity>
 				<effectOnWeather>true</effectOnWeather>
+				<smokeEnabled>true</smokeEnabled>
+				<smokeDensity>1</smokeDensity>
 				<fuelFilter>
 					<thingDefs>
 						<li>Coal</li>
@@ -165,7 +168,7 @@
 					<categories>
 						<li>Wooden</li>
 						<li>Woody</li>
-					</categories>  
+					</categories>
 				</fuelFilter>
 			</li>
 		</comps>
@@ -198,7 +201,7 @@
 		<description>Heated flooring tiles that utilize conductive wires and convection heating to warm a room.</description>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
-			<WorkToBuild>100</WorkToBuild>
+			<WorkToBuild>60</WorkToBuild>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<selectable>false</selectable>
@@ -264,14 +267,14 @@
 		<fillPercent>0.4</fillPercent>
 		<canOverlapZones>false</canOverlapZones>
 		<statBases>
-			<WorkToBuild>1000</WorkToBuild>
+			<WorkToBuild>540</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<tickerType>Rare</tickerType>
 		<description>An electrical device that converts electricity into heat. It can automatically turn itself on or off to reach a specific target temperature.</description>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
 		<costList>
@@ -319,7 +322,7 @@
 			<graphicClass>Graphic_Multi</graphicClass>
 		</graphicData>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>75</costStuffCount>
 		<costList>
@@ -332,7 +335,7 @@
 			<canPlaceOverWall>true</canPlaceOverWall>
 		</building>
 		<statBases>
-			<WorkToBuild>1800</WorkToBuild>
+			<WorkToBuild>960</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Beauty>-6</Beauty>
@@ -402,13 +405,13 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<statBases>
-			<WorkToBuild>5000</WorkToBuild>
+			<WorkToBuild>2520</WorkToBuild>
 			<MaxHitPoints>250</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Beauty>-20</Beauty>
 		</statBases>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>150</costStuffCount>
 		<costList>
@@ -476,14 +479,14 @@
 		<fillPercent>0.4</fillPercent>
 		<size>(2,2)</size>
 		<statBases>
-			<WorkToBuild>5000</WorkToBuild>
+			<WorkToBuild>2520</WorkToBuild>
 			<MaxHitPoints>150</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<description>A industrial geothermal heater that collects and controls the heat from a steam geyser. It is self-balanced and can heat up a large indoor area to a comfortable temperature.</description>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>RuggedMetallic</li>
 		</stuffCategories>
 		<costStuffCount>200</costStuffCount>
 		<costList>
@@ -540,7 +543,7 @@
 		<fillPercent>0.40</fillPercent>
 		<statBases>
 			<MaxHitPoints>80</MaxHitPoints>
-			<WorkToBuild>200</WorkToBuild>
+			<WorkToBuild>120</WorkToBuild>
 			<Flammability>0</Flammability>
 		</statBases>
 		<costList>
@@ -595,12 +598,12 @@
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<statBases>
 			<Flammability>0</Flammability>
-			<WorkToBuild>2200</WorkToBuild>
+			<WorkToBuild>1140</WorkToBuild>
 			<MaxHitPoints>500</MaxHitPoints>
 			<Cleanliness>-10</Cleanliness>
 		</statBases>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>85</costStuffCount>
 		<costList>
@@ -656,14 +659,14 @@
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<statBases>
-			<WorkToBuild>1600</WorkToBuild>
+			<WorkToBuild>840</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Beauty>-3</Beauty>
 		</statBases>
 		<tickerType>Rare</tickerType>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
 		<costList>
@@ -733,14 +736,14 @@
 		<blockLight>true</blockLight>
 		<canOverlapZones>false</canOverlapZones>
 		<statBases>
-			<WorkToBuild>2800</WorkToBuild>
+			<WorkToBuild>1440</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Beauty>-6</Beauty>
 		</statBases>
 		<tickerType>Rare</tickerType>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>70</costStuffCount>
 		<costList>
@@ -799,7 +802,7 @@
 			<drawSize>(3,1)</drawSize>
 		</graphicData>
 		<statBases>
-			<WorkToBuild>7000</WorkToBuild>
+			<WorkToBuild>3540</WorkToBuild>
 			<MaxHitPoints>250</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 			<Beauty>-12</Beauty>
@@ -874,7 +877,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<staticSunShadowHeight>1.0</staticSunShadowHeight>
 		<statBases>
-			<WorkToBuild>1700</WorkToBuild>
+			<WorkToBuild>900</WorkToBuild>
 			<MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
 		</statBases>
@@ -882,7 +885,7 @@
 		<description>A simple vent for equalizing the temperature between two rooms without allowing people to walk between them.</description>
 		<size>(1,1)</size>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>35</costStuffCount>
 		<costList>
@@ -953,7 +956,7 @@
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<WorkToBuild>2600</WorkToBuild>
+			<WorkToBuild>1320</WorkToBuild>
 			<Mass>5</Mass>
 			<Flammability>1.0</Flammability>
 			<Beauty>-5</Beauty>
@@ -962,13 +965,16 @@
 		<description>Displays the current ambient temperature and can be configured to provide temperature based alerts. Does not require power.</description>
 		<size>(1,1)</size>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 		<costList>
 			<ComponentIndustrial>5</ComponentIndustrial>
 			<ElectronicComponents>2</ElectronicComponents>
 		</costList>
+		<building>
+			<uninstallWork>150</uninstallWork>
+		</building>
 		<comps>
 			<li Class="CompProperties_TempControl">
 				<energyPerSecond>0</energyPerSecond>

@@ -31,7 +31,7 @@
     <rotatable>true</rotatable>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>15000</WorkToBuild>
+      <WorkToBuild>7500</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
   </ThingDef>
@@ -69,8 +69,11 @@
     </graphicData>
     <specialDisplayRadius>13.7</specialDisplayRadius>
     <statBases>
-      <WorkToBuild>29000</WorkToBuild>
+      <WorkToBuild>14520</WorkToBuild>
     </statBases>
+    <costList>
+      <Steel>100</Steel>
+    </costList>
     <researchPrerequisites>
       <li>DeepWells</li>
     </researchPrerequisites>
@@ -89,7 +92,7 @@
   </ThingDef>
 
   <ThingDef Name="BasedWaterTower" ParentName="BasedHygieneMom" Abstract="True">
-    <description>Stores water for use by plumbed fixtures, if the contained water becomes contaminated the tank must be drained.</description>
+    <description>Stores water for use by plumbed fixtures. If the contained water becomes contaminated, the tank must be drained.</description>
     <tickerType>Normal</tickerType>
     <blockWind>true</blockWind>
     <castEdgeShadows>false</castEdgeShadows>
@@ -130,6 +133,7 @@
     </thingCategories>
     <stuffCategories>
       <li>Stony</li>
+      <li>Bricks</li>
       <li>Metallic</li>
     </stuffCategories>
     <costStuffCount>25</costStuffCount>
@@ -151,7 +155,7 @@
     <statBases>
       <Mass>2</Mass>
       <MaxHitPoints>75</MaxHitPoints>
-      <WorkToBuild>1000</WorkToBuild>
+      <WorkToBuild>540</WorkToBuild>
     </statBases>
     <researchPrerequisites>
       <li>Plumbing</li>
@@ -179,6 +183,7 @@
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Stony</li>
+			<li>Bricks</li>
 			<li>Plastic</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
@@ -189,7 +194,7 @@
     </comps>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
-      <WorkToBuild>2000</WorkToBuild>
+      <WorkToBuild>1020</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
     <researchPrerequisites>
@@ -222,12 +227,13 @@
 		<stuffCategories>
 			<li>Metallic</li>
 			<li>Stony</li>
+			<li>Bricks</li>
 			<li>Plastic</li>
 		</stuffCategories>
 		<costStuffCount>50</costStuffCount>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
-      <WorkToBuild>5000</WorkToBuild>
+      <WorkToBuild>2520</WorkToBuild>
       <Flammability>0.0</Flammability>
     </statBases>
     <researchPrerequisites>
@@ -258,8 +264,7 @@
       <soundAmbient>sewage_Ambience</soundAmbient>
     </building>
   </ThingDef>
-  
-  
+
   <ThingDef ParentName="BasedWaterPump">
     <defName>WindPump</defName>
     <label>Wind Pump</label>
@@ -267,6 +272,7 @@
     <graphicData>
       <texPath>DBH/Things/Building/Water/WindPump</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
       <drawSize>(2,2)</drawSize>
       <shadowData>
         <volume>(0.6, 1.0, 1.6)</volume>
@@ -286,20 +292,14 @@
 		<costStuffCount>75</costStuffCount>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>2500</WorkToBuild>
+      <WorkToBuild>1260</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
     <comps>
-      <li Class="CompProperties_Breakdownable"/>
       <li Class="DubsBadHygiene.CompProperties_WaterPumpingStation">
         <compClass>DubsBadHygiene.CompWindPump</compClass>
         <Capacity>2000</Capacity>
       </li>
-	  	  <li Class="CompProperties_Power">
-			<compClass>CompPowerPlantWind</compClass>
-			<basePowerConsumption>-250</basePowerConsumption>
-			<transmitsPower>true</transmitsPower>
-        </li>
     </comps>
     <researchPrerequisites>
       <li>Plumbing</li>
@@ -315,7 +315,7 @@
     <passability>Impassable</passability>
     <blockWind>true</blockWind>
   </ThingDef>
-  
+
   <ThingDef ParentName="BasedWaterPump">
     <defName>ElectricPump</defName>
     <label>Electric Pump</label>
@@ -342,7 +342,7 @@
 		</costList>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>1500</WorkToBuild>
+      <WorkToBuild>780</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Mass>25</Mass>
     </statBases>
@@ -384,7 +384,7 @@
 		</costList>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
-      <WorkToBuild>5000</WorkToBuild>
+      <WorkToBuild>2520</WorkToBuild>
       <Flammability>1.0</Flammability>
     </statBases>
     <comps>
@@ -412,7 +412,7 @@
   <ThingDef ParentName="BasedHygieneMom">
     <defName>SewageOutlet</defName>
     <label>Sewage outlet</label>
-    <description>Can be placed anywhere, sewage will pool and spread on land or disperse in water. Sewage cleans up over time, the presence of trees, water or rain will speed it up.</description>
+    <description>Can be placed anywhere. Sewage will pool and spread on land or disperse in water. Sewage cleans up over time; the presence of trees, water or rain will speed this up.</description>
     <graphicData>
       <texPath>DBH/Things/Building/Sewage/sewagePipe</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -452,7 +452,7 @@
     <rotatable>true</rotatable>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
-      <WorkToBuild>1500</WorkToBuild>
+      <WorkToBuild>780</WorkToBuild>
       <Flammability>0.0</Flammability>
       <Beauty>-25</Beauty>
       <Cleanliness>-100</Cleanliness>
@@ -480,7 +480,7 @@
   <ThingDef ParentName="BasedHygieneMom">
     <defName>SewageSepticTank</defName>
     <label>Septic Tank</label>
-    <description>Slowly cleans sewage over time. Sewage is directed to septic tanks first, if it reaches full capacity then excess sewage is sent to sewage outlets.</description>
+    <description>Slowly cleans sewage over time. Sewage is directed to septic tanks first. If it reaches full capacity then excess sewage is sent to sewage outlets.</description>
     <graphicData>
       <texPath>DBH/Things/Building/Sewage/SepticTank</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -498,6 +498,7 @@
     <stuffCategories>
       <li>Metallic</li>
       <li>Stony</li>
+      <li>Bricks</li>
     </stuffCategories>
     <costList>
 		<ComponentIndustrial>10</ComponentIndustrial>
@@ -508,7 +509,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToBuild>2000</WorkToBuild>
+      <WorkToBuild>1020</WorkToBuild>
       <Flammability>0.0</Flammability>
       <Beauty>-12</Beauty>
       <Cleanliness>-100</Cleanliness>
@@ -563,7 +564,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <MaxHitPoints>350</MaxHitPoints>
-      <WorkToBuild>5000</WorkToBuild>
+      <WorkToBuild>2520</WorkToBuild>
       <Flammability>0.0</Flammability>
       <Beauty>-12</Beauty>
       <Cleanliness>-100</Cleanliness>
@@ -625,7 +626,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
-      <WorkToBuild>2500</WorkToBuild>
+      <WorkToBuild>1260</WorkToBuild>
     </statBases>
     <comps>
       <li Class="CompProperties_Flickable"/>

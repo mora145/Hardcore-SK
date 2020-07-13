@@ -5,7 +5,7 @@
 	<Verse.ThingDef ParentName="WeaponNeoliticBase">
 		<defName>MeleeWeapon_Ikwa</defName>
 		<label>Short Spear</label>
-		<description>A short spearhandle attached to a long spear head, designed to be driven into vital organs with a quick thrust.</description>
+		<description>A short one-handed primitive spear, designed to be driven into vital organs with a quick thrust.</description>
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Ikwa</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -18,7 +18,7 @@
 		</weaponTags>
 		<tradeability>Sellable</tradeability>			
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>25</costStuffCount>
 		<costList>
@@ -28,13 +28,13 @@
 			<WorkToMake>4500</WorkToMake>
 			<Bulk>8</Bulk>
 			<Mass>2.5</Mass>
-			<MeleeCounterParryBonus>1.3</MeleeCounterParryBonus>
+			<MeleeCounterParryBonus>0.7</MeleeCounterParryBonus>	
 		</statBases>
 		<equippedAngleOffset>-25</equippedAngleOffset>
 		<equippedStatOffsets>
-			<MeleeCritChance>0.5</MeleeCritChance>
-			<MeleeParryChance>0.5</MeleeParryChance>
-			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+			<MeleeCritChance>0.15</MeleeCritChance>
+			<MeleeParryChance>0.2</MeleeParryChance>
+			<MeleeDodgeChance>0.4</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -43,21 +43,11 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>9</power>
-				<cooldownTime>1.25</cooldownTime>
-				<armorPenetration>0.12</armorPenetration>
-				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<!--<id>shaftpoke</id>-->
-				<label>point</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>13</power>
+				<power>5</power>
 				<cooldownTime>1.4</cooldownTime>
-				<armorPenetration>0.12</armorPenetration>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>5</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<label>head</label>
@@ -65,8 +55,10 @@
 					<li>Stab</li>
 				</capacities>
 				<power>10</power>
-				<cooldownTime>1.3</cooldownTime>
-				<armorPenetration>0.22</armorPenetration>
+				<cooldownTime>1.4</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<armorPenetrationBlunt>6</armorPenetrationBlunt>
+				<armorPenetrationSharp>4</armorPenetrationSharp>
 				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
 			</li>
 		</tools>
@@ -79,7 +71,7 @@
 	<Verse.ThingDef ParentName="WeaponNeoliticBase">
 		<defName>MeleeWeapon_Spear</defName>
 		<label>Spear</label>
-		<description>A polearm tipped with a sharp point for stabbing opponents in melee combat.</description>
+		<description>A two-handed polearm tipped with a sharp point for stabbing opponents in melee combat.</description>
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Spear</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -87,28 +79,27 @@
 		<techLevel>Industrial</techLevel>
 		<weaponTags>
 			<li>Neolithic</li>
-			<li>NeolithicMeleeBasic</li>
-			<li>CE_OneHandedWeapon</li>
+			<li>NeolithicMeleeBasic2H</li>
 		</weaponTags>
 		<tradeability>Sellable</tradeability>			
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>30</costStuffCount>
 		<costList>
 			<WoodPlank>30</WoodPlank>
 		</costList>
 		<statBases>
 			<WorkToMake>6000</WorkToMake>
-			<Bulk>9</Bulk>
+			<Bulk>10</Bulk>
 			<Mass>3.5</Mass>
-			<MeleeCounterParryBonus>1.3</MeleeCounterParryBonus>
+			<MeleeCounterParryBonus>0.9</MeleeCounterParryBonus>
 		</statBases>
 		<equippedAngleOffset>-20</equippedAngleOffset>
 		<equippedStatOffsets>
-			<MeleeCritChance>0.5</MeleeCritChance>
-			<MeleeParryChance>0.6</MeleeParryChance>
-			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+			<MeleeCritChance>0.2</MeleeCritChance>
+			<MeleeParryChance>0.2</MeleeParryChance>
+			<MeleeDodgeChance>0.7</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
@@ -117,33 +108,30 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>11</power>
-				<cooldownTime>1.5</cooldownTime>
-				<armorPenetration>0.16</armorPenetration>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>8</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>Shaft</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<!--<id>shaftpoke</id>-->
-				<label>point</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>18</power>
-				<cooldownTime>1.9</cooldownTime>
-				<armorPenetration>0.14</armorPenetration>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<label>head</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>14</power>
-				<cooldownTime>1.7</cooldownTime>
-				<armorPenetration>0.26</armorPenetration>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<armorPenetrationBlunt>8</armorPenetrationBlunt>
+				<armorPenetrationSharp>4.3</armorPenetrationSharp>
 				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
 			</li>
 		</tools>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.3,1.3</DrawSize>
+		  </li>
+		</modExtensions>
 		<thingCategories>
 			<li>SharpMelee</li>
 		</thingCategories>
@@ -153,7 +141,7 @@
 	<Verse.ThingDef ParentName="WeaponNeoliticBase">
 		<defName>MeleeWeapon_Mace</defName>
 		<label>Mace</label>
-		<description>A refined club, engineered for efficient swinging and deadly impacts.</description>
+		<description>A one-handed mace, engineered for efficient swinging and deadly impacts.</description>
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Mace</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -166,9 +154,9 @@
 		</weaponTags>
 		<tradeability>Sellable</tradeability>			
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>40</costStuffCount>
 		<costList>
 			<WoodPlank>20</WoodPlank>
 		</costList>
@@ -176,33 +164,23 @@
 			<WorkToMake>6000</WorkToMake>
 			<Bulk>6</Bulk>
 			<Mass>3</Mass>
-			<MeleeCounterParryBonus>0.8</MeleeCounterParryBonus>
+			<MeleeCounterParryBonus>0.3</MeleeCounterParryBonus>
 		</statBases>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<equippedStatOffsets>
-			<MeleeCritChance>0.6</MeleeCritChance>
-			<MeleeParryChance>0.35</MeleeParryChance>
+			<MeleeCritChance>0.3</MeleeCritChance>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
 		</equippedStatOffsets>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
-				<label>handle</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>1.6</cooldownTime>
-				<armorPenetration>0.13</armorPenetration>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
 				<label>head</label>
-				<labelUsedInLogging>false</labelUsedInLogging>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>17</power>
-				<cooldownTime>1.6</cooldownTime>
-				<armorPenetration>0.17</armorPenetration>
+				<power>9</power>
+				<cooldownTime>2.1</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<armorPenetrationBlunt>7</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
 			</li>
 		</tools>
@@ -215,7 +193,7 @@
 	<Verse.ThingDef ParentName="WeaponNeoliticBase">
 		<defName>MeleeWeapon_Club</defName>
 		<label>Club</label>
-		<description>A club is the oldest human weapon. It is a shaped blunt weapon for bashing enemies to death. Primitive but effective.</description>
+		<description>A club is the oldest human weapon. It is a one-handed blunt weapon for bashing enemies to death. Primitive but effective.</description>
 		<graphicData>
 			<texPath>Things/Weapons/Melee/Club</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -237,33 +215,23 @@
 			<DeteriorationRate>1</DeteriorationRate>
 			<Bulk>6</Bulk>
 			<Mass>2.5</Mass>
-			<MeleeCounterParryBonus>0.8</MeleeCounterParryBonus>
+			<MeleeCounterParryBonus>0.7</MeleeCounterParryBonus>
 		</statBases>
 		<equippedAngleOffset>-20</equippedAngleOffset>
 		<equippedStatOffsets>
-			<MeleeCritChance>0.5</MeleeCritChance>
-			<MeleeParryChance>0.4</MeleeParryChance>
+			<MeleeCritChance>0.2</MeleeCritChance>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>	
 		</equippedStatOffsets>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
-				<label>handle</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>8</power>
-				<cooldownTime>1.6</cooldownTime>
-				<armorPenetration>0.12</armorPenetration>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
 				<label>head</label>
-				<labelUsedInLogging>false</labelUsedInLogging>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>15</power>
-				<cooldownTime>1.5</cooldownTime>
-				<armorPenetration>0.15</armorPenetration>
+				<power>8</power>
+				<cooldownTime>2.2</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<armorPenetrationBlunt>5</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
 			</li>
 		</tools>
@@ -274,44 +242,50 @@
 
 
 	<Verse.ThingDef ParentName="WeaponNeoliticBase">
-		<defName>NorbalMeleeWeapon_ShortSwordtwo</defName>
-		<label>Norbal Sword</label>
-		<description>Reliable and deadly in melee combat. Comes with added Nordic flair</description>
+		<defName>MeleeWeapon_Shiv</defName>
+		<label>Shiv</label>
+		<description>An improvised knife-like weapon.</description>
 		<graphicData>
-			<texPath>Things/Weapons/Norbal/NorbalierSword</texPath>
+			<texPath>Things/Weapons/Melee/Shiv</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>InteractMelee</soundInteract>
-		<techLevel>Industrial</techLevel>
-		<weaponTags>
-			<li>NorbalMelee</li>
-			<li>CE_OneHandedWeapon</li>
-		</weaponTags>
 		<tradeability>Sellable</tradeability>			
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>25</costStuffCount>
 		<statBases>
-			<WorkToMake>7500</WorkToMake>
-			<Bulk>5</Bulk>
-			<Mass>2</Mass>
-			<MeleeCounterParryBonus>1.1</MeleeCounterParryBonus>
+			<WorkToMake>3500</WorkToMake>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Bulk>0.25</Bulk>
+			<Mass>0.25</Mass>
+			<MeleeCounterParryBonus>1.0</MeleeCounterParryBonus>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
 		<equippedStatOffsets>
-			<MeleeCritChance>0.6</MeleeCritChance>
-			<MeleeParryChance>0.5</MeleeParryChance>
+			<CookSpeed>0.15</CookSpeed>
+			<ButcheryFleshSpeed>0.15</ButcheryFleshSpeed>
+			<MeleeCritChance>0.4</MeleeCritChance>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeParryChance>0.1</MeleeParryChance>
 		</equippedStatOffsets>
+		<techLevel>Industrial</techLevel>
+		<weaponTags>
+			<li>MidworldMelee</li>
+			<li>CE_Sidearm_Melee</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
 		<tools>
 			<li Class="CombatExtended.ToolCE">
 				<label>handle</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>7</power>
-				<cooldownTime>1.2</cooldownTime>
-				<armorPenetration>0.12</armorPenetration>
+				<power>5</power>
+				<cooldownTime>1.1</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>4</armorPenetrationBlunt>
 				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 			</li>
 			<li Class="CombatExtended.ToolCE">
@@ -319,251 +293,17 @@
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>13</power>
-				<cooldownTime>1.4</cooldownTime>
-				<armorPenetration>0.21</armorPenetration>
+				<power>7.5</power>
+				<cooldownTime>1.1</cooldownTime>
+				<armorPenetrationBlunt>4</armorPenetrationBlunt>
+				<armorPenetrationSharp>3</armorPenetrationSharp>
 				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>edge</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>17</power>
-				<cooldownTime>1.6</cooldownTime>
-				<armorPenetration>0.24</armorPenetration>
-				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
 			</li>
 		</tools>
 		<thingCategories>
-			<li>SharpMelee</li>
 			<li>AgileMelee</li>
-		</thingCategories>
-	</Verse.ThingDef>
-
-
-	<Verse.ThingDef ParentName="WeaponNeoliticBase">
-		<defName>NorbalMeleeWeapon_ShortSword</defName>
-		<label>Heroic Sword</label>
-		<description>Reliable and deadly in melee combat.</description>
-		<graphicData>
-			<texPath>Things/Weapons/Norbal/NorbalSword</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>InteractMelee</soundInteract>
-		<techLevel>Industrial</techLevel>
-		<weaponTags>
-			<li>NorbalHeroMelee</li>
-			<li>CE_OneHandedWeapon</li>
-		</weaponTags>			
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
-		<statBases>
-			<WorkToMake>8000</WorkToMake>
-			<Bulk>6</Bulk>
-			<Mass>3</Mass>
-			<MeleeCounterParryBonus>1.1</MeleeCounterParryBonus>
-		</statBases>
-		<equippedAngleOffset>-65</equippedAngleOffset>
-		<equippedStatOffsets>
-			<MeleeCritChance>0.7</MeleeCritChance>
-			<MeleeParryChance>0.6</MeleeParryChance>
-		</equippedStatOffsets>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<label>handle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>10</power>
-				<cooldownTime>1.7</cooldownTime>
-				<armorPenetration>0.14</armorPenetration>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>17</power>
-				<cooldownTime>1.75</cooldownTime>
-				<armorPenetration>0.23</armorPenetration>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>edge</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>20</power>
-				<cooldownTime>1.8</cooldownTime>
-				<armorPenetration>0.28</armorPenetration>
-				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
-			</li>
-		</tools>
-		<thingCategories>
-			<li>SharpMelee</li>
-			<li>HeavyMelee</li>
-		</thingCategories>
-	</Verse.ThingDef>
-
-
-	<Verse.ThingDef ParentName="WeaponNeoliticBase">
-		<defName>NorbalMeleeWeapon_Ax</defName>
-		<label>Norbal War Axe</label>
-		<description>Medieval axe.</description>
-		<graphicData>
-			<texPath>Things/Weapons/Norbal/NorbalHandukarAx</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>InteractMelee</soundInteract>
-		<techLevel>Industrial</techLevel>
-		<weaponTags>
-			<li>NorbalHeroMelee</li>
-			<li>NorbalMelee</li>
-			<li>CE_OneHandedWeapon</li>
-		</weaponTags>
-		<tradeability>Sellable</tradeability>			
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
-		<costList>
-			<WoodPlank>15</WoodPlank>
-		</costList>
-		<statBases>
-			<WorkToMake>8000</WorkToMake>
-			<Bulk>6</Bulk>
-			<Mass>2.5</Mass>
-			<MeleeCounterParryBonus>0.9</MeleeCounterParryBonus>
-		</statBases>
-		<equippedAngleOffset>0</equippedAngleOffset>
-		<equippedStatOffsets>
-			<MeleeCritChance>0.6</MeleeCritChance>
-			<MeleeParryChance>0.4</MeleeParryChance>
-			<MeleeDodgeChance>0.2</MeleeDodgeChance>
-			<PlantWorkSpeed>0.16</PlantWorkSpeed>
-		</equippedStatOffsets>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<label>handle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>15</power>
-				<cooldownTime>1.6</cooldownTime>
-				<armorPenetration>0.23</armorPenetration>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>12</power>
-				<cooldownTime>1.5</cooldownTime>
-				<armorPenetration>0.18</armorPenetration>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>edge</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>18</power>
-				<cooldownTime>1.65</cooldownTime>
-				<armorPenetration>0.28</armorPenetration>
-				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
-			</li>
-		</tools>
-		<thingCategories>
 			<li>SharpMelee</li>
 		</thingCategories>
-		<modExtensions>
-			<li Class="RightToolForJob.EquipRightToolExtension">
-				<purpose>CutPlant</purpose>
-			</li>
-		</modExtensions>
-	</Verse.ThingDef>
-
-
-	<Verse.ThingDef ParentName="WeaponNeoliticBase">
-		<defName>NorbalMeleeWeapon_Bigax</defName>
-		<label>Battleaxe</label>
-		<description>The ultimate Norbal beheader.</description>
-		<graphicData>
-			<texPath>Things/Weapons/Norbal/NorbalAx</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>InteractMelee</soundInteract>
-		<techLevel>Industrial</techLevel>
-		<weaponTags>
-			<li>NorbalMelee</li>
-			<li>CE_OneHandedWeapon</li>
-		</weaponTags>
-		<tradeability>Sellable</tradeability>			
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
-		<costList>
-			<WoodPlank>15</WoodPlank>
-		</costList>
-		<statBases>
-			<WorkToMake>8500</WorkToMake>
-			<Bulk>8</Bulk>
-			<Mass>4</Mass>
-			<MeleeCounterParryBonus>1</MeleeCounterParryBonus>
-		</statBases>
-		<equippedAngleOffset>-25</equippedAngleOffset>
-		<equippedStatOffsets>
-			<MeleeCritChance>0.7</MeleeCritChance>
-			<MeleeParryChance>0.6</MeleeParryChance>
-			<PlantWorkSpeed>0.18</PlantWorkSpeed>
-		</equippedStatOffsets>
-		<tools>
-			<li Class="CombatExtended.ToolCE">
-				<label>handle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>19</power>
-				<cooldownTime>1.85</cooldownTime>
-				<armorPenetration>0.23</armorPenetration>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>15</power>
-				<cooldownTime>1.7</cooldownTime>
-				<armorPenetration>0.25</armorPenetration>
-				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
-			</li>
-			<li Class="CombatExtended.ToolCE">
-				<label>edge</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>23</power>
-				<cooldownTime>1.9</cooldownTime>
-				<armorPenetration>0.34</armorPenetration>
-				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
-			</li>
-		</tools>
-		<thingCategories>
-			<li>SharpMelee</li>
-			<li>HeavyMelee</li>
-		</thingCategories>
-		<modExtensions>
-			<li Class="RightToolForJob.EquipRightToolExtension">
-				<purpose>CutPlant</purpose>
-			</li>
-		</modExtensions>
-	</Verse.ThingDef>
-
+	</Verse.ThingDef>  
+	
 </Defs>

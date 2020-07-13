@@ -21,7 +21,7 @@
 			<MaxHitPoints>40</MaxHitPoints>
 			<Flammability>1</Flammability>
 			<Cleanliness>-5</Cleanliness>
-			<WorkToBuild>2000</WorkToBuild>
+			<WorkToBuild>1020</WorkToBuild>
 			<Beauty>-4</Beauty>
 			<TrapSpringChance>0.8</TrapSpringChance>
 			<Mass>13</Mass>
@@ -32,6 +32,7 @@
 			<trapDestroyOnSpring>true</trapDestroyOnSpring>
 			<expandHomeArea>false</expandHomeArea>
 			<ai_chillDestination>false</ai_chillDestination>
+			<uninstallWork>350</uninstallWork>
 		</building>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -59,7 +60,7 @@
 		<stealable>false</stealable>
 		<statBases>
 			<MaxHitPoints>40</MaxHitPoints>
-			<WorkToBuild>2000</WorkToBuild>
+			<WorkToBuild>1020</WorkToBuild>
 			<Beauty>-4</Beauty>
 			<Flammability>1</Flammability>
 			<TrapSpringChance>0.8</TrapSpringChance>
@@ -71,6 +72,7 @@
 			<trapPeacefulWildAnimalsSpringChanceFactor>0.25</trapPeacefulWildAnimalsSpringChanceFactor>
 			<expandHomeArea>false</expandHomeArea>
 			<ai_chillDestination>false</ai_chillDestination>
+			<uninstallWork>950</uninstallWork>
 		</building>
 		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -96,7 +98,7 @@
 		<uiIconPath>Things/Building/Security/Wire/Razor_Wire_Trap_MenuIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>280</MaxHitPoints>
-			<WorkToBuild>1800</WorkToBuild>
+			<WorkToBuild>960</WorkToBuild>
 			<Flammability>0.5</Flammability>
 			<Beauty>-3</Beauty>
 			<TrapMeleeDamage>60</TrapMeleeDamage>

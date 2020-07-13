@@ -20,7 +20,7 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>350</MaxHitPoints>
-			<WorkToBuild>550</WorkToBuild>
+			<WorkToBuild>240</WorkToBuild>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -77,7 +77,7 @@
 		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
 		<statBases>
 			<MaxHitPoints>380</MaxHitPoints>
-			<WorkToBuild>400</WorkToBuild>
+			<WorkToBuild>180</WorkToBuild>
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<stuffCategories>
@@ -120,12 +120,12 @@
 		</building>
 		<statBases>
 			<MaxHitPoints>750</MaxHitPoints>
-			<WorkToBuild>1500</WorkToBuild>
+			<WorkToBuild>720</WorkToBuild>
 			<Flammability>0.1</Flammability>
 		</statBases>
 		<tickerType>Never</tickerType>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>12</costStuffCount>
 		<costList>
@@ -169,12 +169,12 @@
 		<uiIconPath>Things/Building/Walls/UWallIco</uiIconPath>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
-			<WorkToBuild>1000</WorkToBuild>
+			<WorkToBuild>480</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<Beauty>1</Beauty>
 		</statBases>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>12</costStuffCount>
 		<costList>
@@ -323,7 +323,7 @@
       <Flammability>0</Flammability>
     </statBases>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>8</costStuffCount>
 	<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -390,7 +390,7 @@
 			<Beauty>1</Beauty>
 		</statBases>
 		<stuffCategories>
-		  <li>Metallic</li>
+		  <li>StrongMetallic</li>
 		  <li>Woody</li>
 		  <li>Stony</li>
 		</stuffCategories>
@@ -455,7 +455,7 @@
 		</statBases>
 		<tickerType>Never</tickerType>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 		</stuffCategories>
 		<costStuffCount>5</costStuffCount>
 		<costList>
@@ -560,7 +560,7 @@
 			<ai_combatDangerous>false</ai_combatDangerous>
 		</building>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 			<li>Woody</li>
 			<li>Stony</li>
 		</stuffCategories>
@@ -668,12 +668,12 @@
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>750</WorkToBuild>
+			<WorkToBuild>420</WorkToBuild>
 			<Flammability>0.2</Flammability>
 			<Beauty>6</Beauty>
 		</statBases>
 		<stuffCategories>
-			<li>Metallic</li>
+			<li>StrongMetallic</li>
 			<li>Stony</li>
 			<li>Bricks</li>
 		</stuffCategories>
